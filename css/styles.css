@@ -1,0 +1,366 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #b7e4c7;
+}
+    
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.fondoVerde {
+    background-color: #2A9D8F;
+    
+}
+
+li {
+    display: inline;
+    font-size: 25px;
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #E9C46A;
+    padding: 2rem;
+}
+
+.logo {
+    display: inline-block;
+    margin: 6rem 10rem 0 26rem;
+}
+
+.titulo {
+    text-align: center;
+    color: #E76F51;
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #F4A261;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tituloProd {
+    text-decoration-line: underline;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #E9C46A;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5rem;
+}
+
+.nombreProducto {
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #264653;
+}
+
+.descripcionSeccion {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #2d6a4f;
+    margin: 0;
+}
+
+.fuenteCard {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.card1 {
+    background-color: #2A9D8F;
+    width: 15rem;
+    height: 23rem;
+    margin: 3rem 2rem;
+    padding: 2.5rem;
+    border: #F4A261;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+}
+
+.card1 img {
+    display: block;
+    width: 13rem;
+    margin: 0 auto;
+    border: #F4A261;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+}
+
+.card2 {
+    background-color: #F4A261;
+    width: 15rem;
+    height: 23rem;
+    margin: 3rem 2rem;
+    padding: 2.5rem;
+    border: #2A9D8F;
+    border-style: dashed;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.etiquetaDescuento {
+    background-color: #2A9D8F;
+    background-size: 5rem;
+    font-size: small;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card2 img {
+    display: block;
+    width: 13rem;
+    margin: 0 auto;
+    border: #2A9D8F;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+}
+
+.cardProductos {
+    background-color: #2A9D8F;
+    width: 15rem;
+    height: 23rem;
+    margin: 3rem 2rem;
+    padding: 2.5rem;
+    border: #F4A261;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+}
+
+section {
+    display: flex;
+}
+
+.redesSociales {
+    color: #F4A261;
+    margin: 1rem 1rem;
+}
+
+.redesSociales img {
+    display: inline-block;
+    width: 5%;
+}
+
+.pieDePagina img {
+    display: block;
+    width: 15%;
+}
+
+.formulario {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F4A261;
+    margin: 5rem 0;
+}
+
+.gridContainer {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 3.1fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridNabvar gridNabvar gridNabvar"
+    "gridMain gridMain gridMain"
+    "gridFooter gridFooter gridFooter";
+}
+
+.gridNabvar { 
+    grid-area: gridNabvar; 
+}
+
+.gridMain { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridLogo gridLogo gridLogo"
+    "gridProductos gridProductos gridProductos"
+    "gridProductos gridProductos gridProductos"
+    "gridOfertas gridOfertas gridOfertas"
+    "gridOfertas gridOfertas gridOfertas";
+    grid-area: gridMain;
+}
+
+.gridLogo { 
+    grid-area: gridLogo;
+    margin: 3rem 6rem;
+}
+
+.gridProductos {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridProductosTxt gridProductosTxt gridProductosTxt"
+    "gridCardProd1 gridCardProd2 gridCardProd3";
+    grid-area: gridProductos;
+}
+
+.gridProductosTxt { 
+    grid-area: gridProductosTxt; 
+}
+
+.gridCardProd1 { 
+    grid-area: gridCardProd1; 
+}
+
+.gridCardProd2 { 
+    grid-area: gridCardProd2; 
+}
+
+.gridCardProd3 { 
+    grid-area: gridCardProd3; 
+}
+
+.gridOfertas {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridOfertasTxt gridOfertasTxt gridOfertasTxt"
+    "gridCardOfertas1 gridCardOfertas2 gridCardOfertas3";
+    grid-area: gridOfertas;
+}
+
+.gridOfertasTxt { 
+    grid-area: gridOfertasTxt; 
+}
+
+.gridCardOfertas1 { 
+    grid-area: gridCardOfertas1; 
+}
+
+.gridCardOfertas2 { 
+    grid-area: gridCardOfertas2; 
+}
+
+.gridCardOfertas3 { 
+    grid-area: gridCardOfertas3; 
+}
+
+.gridFooter { 
+    grid-area: gridFooter; 
+}
+
+.gridProductosProd {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 5.2fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridNabvarProductos gridNabvarProductos gridNabvarProductos"
+    "gridMainProductos gridMainProductos gridMainProductos"
+    "gridFooterProductos gridFooterProductos gridFooterProductos";
+}
+
+.gridNabvarProductos { 
+    grid-area: gridNabvarProductos; 
+}
+
+.gridMainProductos {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridTituloProductos gridTituloProductos gridTituloProductos"
+    "gridTxt gridTxt gridTxt"
+    "gridCard1 gridCard2 gridCard3"
+    "gridCard4 gridCard5 gridCard6"
+    "gridCard7 gridCard8 gridCard9"
+    "gridCard10 gridCard11 gridCard12";
+    grid-area: gridMainProductos;
+}
+
+.gridTituloProductos { 
+    grid-area: gridTituloProductos;
+}
+
+.gridTxt { 
+    grid-area: gridTxt; 
+}
+
+.gridCard1 { 
+    grid-area: gridCard1; 
+}
+
+.gridCard2 { 
+    grid-area: gridCard2; 
+}
+
+.gridCard3 { 
+    grid-area: gridCard3; 
+}
+
+.gridCard4 { 
+    grid-area: gridCard4; 
+}
+
+.gridCard5 { 
+    grid-area: gridCard5; 
+}
+
+.gridCard6 { 
+    grid-area: gridCard6; 
+}
+
+.gridCard7 { 
+    grid-area: gridCard7; 
+}
+
+.gridCard8 { 
+    grid-area: gridCard8; 
+}
+
+.gridCard9 { 
+    grid-area: gridCard9; 
+}
+
+.gridCard10 { 
+    grid-area: gridCard10; 
+}
+
+.gridCard11 { 
+    grid-area: gridCard11; 
+}
+
+.gridCard12 { 
+    grid-area: gridCard12; 
+}
+
+.gridFooterProductos { 
+    grid-area: gridFooterProductos; 
+}
+
+
