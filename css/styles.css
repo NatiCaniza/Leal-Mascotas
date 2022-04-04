@@ -18,7 +18,7 @@ ul {
 
 li {
     display: inline;
-    font-size: 25px;
+    font-size: 22px;
     margin: 0.5rem;
 }
 
@@ -366,8 +366,12 @@ section {
 }
 
 @media (max-width:320px) {
+    
     .gridContainer {
+        max-width: 320px;
+        height: 1100px;
         grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.3fr;
         grid-template-areas:
             "gridNabvar"
             "gridMain"
@@ -379,38 +383,26 @@ section {
     }    
 
     .fondoVerde {
-        max-width: 320px;
-        display: flex;
-        flex-direction: column;
-    }
-        
-    .logo {
-        max-width: 319px;
-        margin: 0;
-        padding: 0;
+        width: 20rem;
+        height: 19rem;
     }
 
-    .imagenLogo {
-        margin: 2rem;
-        max-width: 250px;
+    ul {
+        margin: 0;
     }
     
-    .titulo {
-        text-align: center;
+    li {
+        display: list-item;
+        font-size: 11px;
+        margin-left: 0.5rem;
         margin-top: 0;
-        font-size: 30px;
-    }
-        
-    .subtitulo {
+        padding: 1rem;
         text-align: center;
-        font-size: 13px;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
     }
     
     .gridMain { 
-        grid-template-columns: 1fr;
+        grid-template-columns:  1fr;
+        grid-template-rows: 0.05fr 0.65fr 0.40fr 0.65fr 0.45fr;
         grid-template-areas:
         "gridLogo"
         "gridProductos"
@@ -419,21 +411,88 @@ section {
         "gridOfertas";
         
     }
+    
+    .logo {
+        max-width: 320px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        
+    }
+
+    .imagenLogo {
+        margin: 1rem 0;
+        max-width: 250px;
+    }
+    
+    .titulo {
+        text-align: center;
+        margin-top: 0;
+        margin-left: 1rem;
+        font-size: 25px;
+    }
+        
+    .subtitulo {
+        text-align: center;
+        font-size: 15px;
+        margin-right: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tituloProd {
+        font-size: 15px;
+    }
+    
+    .descripcionSeccion { 
+        text-align: left;
+        font-size: 12px;
+        margin-left: 0.5rem;
+    }
 
     .gridProductos {  
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.4fr 0.53fr 0.53fr 0.53fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.10fr 0.10fr 0.10fr;
         grid-template-areas:
         "gridProductosTxt"
         "gridCardProd1" 
         "gridCardProd2" 
         "gridCardProd3";
-        
+    }
+
+    .gridProductosTxt {
+        max-width: 320px;
+    }
+
+    .card1 {
+        width: 12rem;
+        height: 18rem;
+        margin: 1rem 1.5rem;
+        padding: 2rem;
+    }
+
+    .card1 img {
+        width: 8rem;
+        margin: 0 auto;
+        padding: 0
+    }
+
+    .fuenteCard {
+        font-size: 13px;
+    }
+
+    .nombreProducto {
+        font-size: 14px;
     }
 
     .gridOfertas {  
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.4fr 0.53fr 0.53fr 0.53fr;
+        max-width: 320px;
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.10fr 0.10fr 0.10fr;
         grid-template-areas:
         "gridOfertasTxt"
         "gridCardOfertas1" 
@@ -442,7 +501,117 @@ section {
         
     }
 
+    .gridOfertasTxt {
+        max-width: 320px;
     }
 
+    .card2 {
+        width: 12rem;
+        height: 18rem;
+        margin: 1rem 1.3rem;
+        padding: 2rem;
+        
+    }
+    
+    .card2 img {
+        width: 8rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .redesSociales {
+        font-size: 14px;
+    }
+
+    .fondoVerdeCel {
+        height: 10rem;
+    }
+
+    .fondoVerdeCelProd {
+        height: 4rem;
+    }
+
+    .gridProductosProd {
+        height: 1100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 5.2fr 1fr;
+        grid-template-areas:
+        "gridNabvarProductos"
+        "gridMainProductos"
+        "gridFooterProductos";
+    }
+
+    .gridNabvarProductos {
+        max-width: 320px;
+    }
+
+    .fondoVerdeProd {
+        width: 16rem;
+        height: 15rem;
+    }
+
+    .gridMainProductos {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "gridTituloProductos"
+        "gridTxt"
+        "gridCard1"
+        "gridCard2"
+        "gridCard3"
+        "gridCard4"
+        "gridCard5"
+        "gridCard6"
+        "gridCard7"
+        "gridCard8"
+        "gridCard9"
+        "gridCard10"
+        "gridCard11"
+        "gridCard12"
+    }
+
+    .gridTituloProductos {
+        text-align: center;
+        margin-top: 0;
+        margin-left: 1rem;
+        font-size: 25px;
+    }
+
+    .gridTxt { 
+        grid-area: gridTxt; 
+    }
+    
+    .gridCardCel {
+        width: 12rem;
+        height: 18rem;
+        margin: 1rem 1.5rem;
+        padding: 2rem;
+    }
+
+    .gridTituloProductos { 
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 25px
+    }
+    
+    .gridTxt { 
+        grid-area: gridTxt; 
+    }
+}
+
+@media (max-width:480px) {
+
+    .gridContainer {  
+        width: 480px;
+        grid-template-areas:
+        "gridNabvar gridNabvar gridNabvar"
+        "gridMain gridMain gridMain"
+        "gridFooter gridFooter gridFooter";
+    }
+
+    
 
 
+    }
+    
