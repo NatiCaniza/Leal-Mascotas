@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #b7e4c7;
 }
@@ -362,5 +364,85 @@ section {
 .gridFooterProductos { 
     grid-area: gridFooterProductos; 
 }
+
+@media (max-width:320px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "gridNabvar"
+            "gridMain"
+            "gridFooter";
+        }
+
+    .gridNabvar {
+        max-width: 320px;
+    }    
+
+    .fondoVerde {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .logo {
+        max-width: 319px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imagenLogo {
+        margin: 2rem;
+        max-width: 250px;
+    }
+    
+    .titulo {
+        text-align: center;
+        margin-top: 0;
+        font-size: 30px;
+    }
+        
+    .subtitulo {
+        text-align: center;
+        font-size: 13px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .gridMain { 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "gridLogo"
+        "gridProductos"
+        "gridProductos"
+        "gridOfertas"
+        "gridOfertas";
+        
+    }
+
+    .gridProductos {  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.53fr 0.53fr 0.53fr;
+        grid-template-areas:
+        "gridProductosTxt"
+        "gridCardProd1" 
+        "gridCardProd2" 
+        "gridCardProd3";
+        
+    }
+
+    .gridOfertas {  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.53fr 0.53fr 0.53fr;
+        grid-template-areas:
+        "gridOfertasTxt"
+        "gridCardOfertas1" 
+        "gridCardOfertas2" 
+        "gridCardOfertas3";
+        
+    }
+
+    }
+
 
 
