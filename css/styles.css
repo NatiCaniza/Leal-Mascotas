@@ -686,7 +686,7 @@ section {
         }
     
         .card2 {
-        width: 7rem;
+            width: 7rem;
             height: 18rem;
             margin: 1rem 1.5rem;
             
@@ -696,4 +696,19 @@ section {
             width: 6rem;
             margin: auto;
         }
-    }
+
+        .ul-NabvarProd { 
+            width: 700px;
+            margin-right: 0;
+        }
+
+        .gridCardCel {
+            width: 7rem;
+            height: 18rem;
+            margin: 1rem 1.5rem;
+        }
+
+        .redesSociales {
+            font-size: 13px;
+        }
+}
