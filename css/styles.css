@@ -600,18 +600,100 @@ section {
     }
 }
 
-@media (max-width:480px) {
-
-    .gridContainer {  
-        width: 480px;
-        grid-template-areas:
-        "gridNabvar gridNabvar gridNabvar"
-        "gridMain gridMain gridMain"
-        "gridFooter gridFooter gridFooter";
-    }
-
     
+@media (width: 768px) {
 
-
-    }
+        .gridContainer {  
+            min-width: 768px;
+            grid-template-columns: 256px 256px 256px ;
+            grid-template-rows: 0.2fr 3.2fr 0.3fr;
+            grid-template-areas:
+            "gridNabvar gridNabvar gridNabvar"
+            "gridMain gridMain gridMain"
+            "gridFooter gridFooter gridFooter";
+        }
     
+        ul {
+            width: 700px;
+        }
+        
+        li {
+            font-size: 11px;
+            display: inline;
+            text-align: left;
+        }
+    
+        a {
+            margin: 1rem;
+            padding: 0;
+        }
+    
+        .fondoVerde {
+            width: 768px;
+            margin-right: 0;
+        }
+    
+        .logo {
+            margin-top: 4rem;
+            margin-left: 11rem;
+            margin-right: 0;
+        }
+    
+        .imagenLogo {
+            width: 400px;
+        }
+    
+        .titulo {
+            font-size: 40px;
+        }
+    
+        .subtitulo {
+            font-size: 25px;
+        }
+    
+        .tituloProd {
+            font-size: 20px;
+        }
+    
+        .descripcionSeccion {
+            font-size: 15px;
+            font-weight: lighter;
+            margin: 0.5rem;
+        }
+    
+        .gridProductos {  
+            grid-template-rows: 0.4fr 1fr;
+        }
+    
+        .card1 {
+            width: 7rem;
+            height: 18rem;
+            margin: 1rem 1.5rem;
+        }
+    
+        .card1 img {
+            width: 6rem;
+            margin: auto
+            
+        }
+    
+        .fuenteCard {
+            font-size: 13px;
+        }
+    
+        .nombreProducto {
+            font-size: 14px;
+        }
+    
+        .card2 {
+        width: 7rem;
+            height: 18rem;
+            margin: 1rem 1.5rem;
+            
+        }
+        
+        .card2 img {
+            width: 6rem;
+            margin: auto;
+        }
+    }
