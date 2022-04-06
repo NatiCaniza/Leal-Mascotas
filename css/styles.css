@@ -8,13 +8,14 @@ body {
 ul {
     list-style-type: none;
     text-align: center;
+    margin: 0;
     padding: 2rem 2rem;
 }
 
 .fondoVerde {
     background-color: #2A9D8F;
-    
-}
+    }
+
 
 li {
     display: inline;
@@ -38,7 +39,7 @@ a {
     color: #E76F51;
     font-size: 50px;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .subtitulo {
@@ -148,13 +149,17 @@ a {
     border-radius: 2rem;
 }
 
+.placeholder {
+    height: 161px; 
+    width: 537px;
+}
+
 section {
     display: flex;
 }
 
 .redesSociales {
     color: #F4A261;
-    margin: 1rem 1rem;
 }
 
 .redesSociales img {
@@ -176,7 +181,7 @@ section {
 .gridContainer {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 3.1fr 0.3fr;
+    grid-template-rows: 0.3fr 5.2fr 0.3fr; 
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -193,7 +198,7 @@ section {
 
 .gridMain { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -365,6 +370,85 @@ section {
     grid-area: gridFooterProductos; 
 }
 
+.gridContacto {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridNavbarContacto gridNavbarContacto gridNavbarContacto"
+    "gridMainContacto gridMainContacto gridMainContacto"
+    "gridFooterContacto gridFooterContacto gridFooterContacto";
+}
+
+.gridNavbarContacto {
+    grid-area: gridNavbarContacto; 
+}
+
+.gridMainContacto {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridTituloContacto gridTituloContacto gridTituloContacto"
+    "gridForm gridForm gridForm"
+    "gridMap gridMap gridMap";
+    grid-area: gridMainContacto;
+}
+
+.gridTituloContacto { 
+    grid-area: gridTituloContacto; 
+}
+
+.gridForm {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridTxtContacto gridTxtContacto gridTxtContacto"
+    "gridFormulario gridFormulario gridFormulario";
+    grid-area: gridForm;
+}
+
+.gridTxtContacto { 
+    grid-area: gridTxtContacto; 
+}
+
+.gridFormulario { 
+    grid-area: gridFormulario; 
+}
+
+.gridMap {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "gridTxtContacto2 gridTxtContacto2 gridTxtContacto2"
+    "gridMapa gridMapa gridMapa";
+    grid-area: gridMap;
+}
+
+.gridTxtContacto2 {
+    grid-area: gridTxtContacto2; 
+}
+
+.gridMapa { 
+    grid-area: gridMapa; 
+}
+
+.gridFooterContacto { 
+    grid-area: gridFooterContacto; 
+}
+
 @media (max-width:320px) {
     
     .gridContainer {
@@ -378,7 +462,7 @@ section {
             "gridFooter";
         }
 
-    .gridNabvar {
+    .gridNabvar { 
         max-width: 320px;
     }    
 
@@ -449,7 +533,7 @@ section {
     
     .descripcionSeccion { 
         text-align: left;
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 0.5rem;
     }
 
@@ -524,11 +608,13 @@ section {
     }
 
     .fondoVerdeCel {
+        width: 300px;
         height: 10rem;
     }
 
     .fondoVerdeCelProd {
-        height: 4rem;
+        width: 320px;
+        height: 10rem;
     }
 
     .gridProductosProd {
@@ -546,7 +632,7 @@ section {
     }
 
     .fondoVerdeProd {
-        width: 16rem;
+        width: 15rem;
         height: 15rem;
     }
 
@@ -598,6 +684,80 @@ section {
     .gridTxt { 
         grid-area: gridTxt; 
     }
+
+    .gridContacto {  
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "gridNavbarContacto"
+        "gridMainContacto"
+        "gridFooterContacto";
+    }
+
+    .gridNavbarContacto {
+        max-width: 320px;
+    }
+
+    .fondoVerdeContactoCel {
+        width: 256px;
+        height: 240px;
+    }
+
+    .gridMainContacto {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.02fr 1fr 1fr;
+        grid-template-areas:
+        "gridTituloContacto"
+        "gridForm"
+        "gridMap";
+    }
+
+    .gridTituloContacto {
+        margin-top: 2rem;
+    }
+
+    .gridForm {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr;
+        grid-template-areas:
+        "gridTxtContacto"
+        "gridFormulario";
+    }
+
+    .gridFormulario {
+        width: 320px;
+        
+    }
+    
+    .gridFormularioCel {
+        height: 400px;
+        margin: 0.5rem;
+    }
+
+    .fieldset {
+        width: 255px;
+        margin-top: 0;
+    }
+
+    .label {
+    font-size: 12px;
+    }
+
+    .textarea {
+        width: 255px;
+        margin-top: 0.5rem;
+    }
+
+    .gridMap {  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr;
+        grid-template-areas:
+        "gridTxtContacto2"
+        "gridMapa";
+    }
+
+    .gridMapa {
+        max-width: 320px;
+    }
 }
 
     
@@ -615,6 +775,7 @@ section {
     
         ul {
             width: 700px;
+            padding: 2.1rem;
         }
         
         li {
@@ -639,6 +800,12 @@ section {
             margin-right: 0;
         }
     
+        .gridMain { 
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+            
+        }
+        
         .imagenLogo {
             width: 400px;
         }
@@ -656,7 +823,7 @@ section {
         }
     
         .descripcionSeccion {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: lighter;
             margin: 0.5rem;
         }
@@ -698,8 +865,15 @@ section {
         }
 
         .ul-NabvarProd { 
-            width: 700px;
+            max-width: 700px;
             margin-right: 0;
+            padding: 2.1rem;
+        }
+
+        .ul-NabvarContac {
+            max-width: 700px;
+            margin-right: 0;
+            padding: 2.1rem;
         }
 
         .gridCardCel {

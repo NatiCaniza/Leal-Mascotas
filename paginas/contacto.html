@@ -10,11 +10,11 @@
 
 </head>
 
-<body>
-
-    <header>
+<body class="gridContacto">
+    
+    <header class="gridNavbarContacto">
         <nav>
-            <ul class="fondoVerde">
+            <ul class="fondoVerde ul-NabvarContac fondoVerdeContactoCel">
                 <li>
                     <a href="../index.html">PRINCIPAL</a>
                 </li>
@@ -37,36 +37,40 @@
             </ul>
         </nav>
     </header>
-    <h1 class="titulo">Contacto</h1>
 
-    <p class="descripcionSeccion">Querés vender nuestros productos o hacernos una consulta?</p>
+    <section class="gridMainContacto">
+        
+        <h1 class="titulo gridTituloContacto">Contacto</h1>
 
-    <form class="formulario">
-        <fieldset>
+        <section class="gridForm">
+        <p class="descripcionSeccion gridTxtContacto">Querés vender nuestros productos o hacernos una consulta?</p>
+
+        <form class="formulario gridFormularioCel">
+        <fieldset class="fieldset">
             <legend>Datos Personales</legend>
 
         <div>
-            <label for="nombre">Nombre y Apellido</label>
+            <label class="label" for="nombre">Nombre y Apellido</label>
             <input type="text" id="nombre">
         </div>
 
         <div>
-            <label for="e-mail">E-mail</label>
+            <label class="label" for="e-mail">E-mail</label>
             <input type="email" name="" id="e-mail">
         </div>
 
         <div>
-            <label for="telefono">Teléfono</label>
+            <label class="label" for="telefono">Teléfono</label>
             <input type="tel" name="" id="telefono">
         </div>
 
         <div>
-            <label for="codigopostal">Código Postal</label>
+            <label class="label" for="codigopostal">Código Postal</label>
             <input type="text" name="" id="codigopostal">
         </div>
 
         <div>
-            <textarea placeholder="Hace tu consulta aqui" style="height: 161px; width: 537px;"></textarea>
+            <textarea class=" placeholder textarea" placeholder="Hace tu consulta aqui"></textarea>
         </div>
 
         <div>
@@ -74,15 +78,18 @@
             <input type="reset" value="Limpiar Formulario">
         </div>
         </fieldset>
+        </form>
+    </section>
 
-    </form>
-
-    <h2 class="tituloProd">Donde encontrarnos</h2>
+    <section class="gridMap">
+    <h2 class="tituloProd gridTxtContacto2">Donde encontrarnos</h2>
 
     <p class="descripcionSeccion">Mitre 55 - Galeria La Continental - Local 7 - Salta Capital</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.2174092157483!2d-65.41069553671575!3d-24.78937201380915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bb4f92c8b7%3A0x77887e50b5263e56!2sGaler%C3%ADa%20La%20Continental!5e0!3m2!1ses!2sar!4v1646946271410!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    <footer class="fondoVerde">
+    <iframe class="gridMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.2174092157483!2d-65.41069553671575!3d-24.78937201380915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bb4f92c8b7%3A0x77887e50b5263e56!2sGaler%C3%ADa%20La%20Continental!5e0!3m2!1ses!2sar!4v1646946271410!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    </section>
+    
+    <footer class="fondoVerde gridFooterContacto fondoVerdeCel">
         <div class="redesSociales">
         <p>Seguinos en nuestras redes!</p>
         <img src="../img/iconmonstr-facebook-3-240 (1).png" alt="Icono de Facebook">
@@ -96,3 +103,5 @@
     
 </body>
 </html>
+
+
