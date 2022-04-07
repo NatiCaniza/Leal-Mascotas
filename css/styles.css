@@ -29,11 +29,6 @@ a {
     padding: 2rem;
 }
 
-.logo {
-    display: inline-block;
-    margin: 6rem 10rem 0 26rem;
-}
-
 .titulo {
     text-align: center;
     color: #E76F51;
@@ -214,6 +209,10 @@ section {
 .gridLogo { 
     grid-area: gridLogo;
     margin: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
 }
 
 .gridProductos {  
