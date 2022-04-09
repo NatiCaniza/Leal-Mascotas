@@ -1,8 +1,11 @@
-body {
+*{
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(#bde0fe, #ffbf69);
+    background-image: linear-gradient(#bde0fe, #ffbf69);
 }
     
 ul {
@@ -27,6 +30,10 @@ a {
     text-decoration: none;
     color: #bde0fe;
     padding: 2rem;
+}
+
+.listaNavegacion a:hover {
+    color: #E9C46A;
 }
 
 .imagenLogo {
@@ -63,8 +70,6 @@ a {
     height: 100px;
 }
 
-
-
 .tituloProd {
     text-decoration-line: underline;
     font-size: 30px;
@@ -76,6 +81,7 @@ a {
 }
 
 .nombreProducto {
+    margin: 1rem;
     font-size: medium;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -90,6 +96,7 @@ a {
 }
 
 .fuenteCard {
+    margin: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
@@ -135,7 +142,9 @@ a {
     background-color: #2A9D8F;
     background-size: 5rem;
     font-size: small;
-    padding: 0px;
+    margin-top: 5px;
+    margin-right: 9px;
+    padding: 0.2px;
     position: absolute;
     top: 0;
     right: 0;
@@ -163,6 +172,37 @@ a {
     border-radius: 2rem;
 }
 
+.botonComprar {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 1rem;
+    padding: 0.5rem 1.2rem;
+    background:#E9C46A;
+    border: 2px solid;
+    border-color: #E76F51;
+    transition: all 1s ease;
+    
+}
+.botonComprar:hover {
+    background: #bde0fe;
+    border-color: #264653;
+    color: #264653;
+}
+
+input {
+    width: 169px;
+    height: 25px;
+    transition: all;
+}
+
+input:focus {
+    width: 350px;
+    height: px;
+    font-size: 20px;
+
+}
+
 .placeholder {
     height: 161px; 
     width: 537px;
@@ -173,10 +213,12 @@ section {
 }
 
 .redesSociales {
+    margin: 0.5rem;
     color: #F4A261;
 }
 
 .redesSociales img {
+    margin: 0.5rem;
     display: inline-block;
     width: 5%;
 }
@@ -275,6 +317,7 @@ section {
     "gridOfertasTxt gridOfertasTxt gridOfertasTxt"
     "gridCardOfertas1 gridCardOfertas2 gridCardOfertas3";
     grid-area: gridOfertas;
+    justify-items: center;
 }
 
 .gridOfertasTxt { 
@@ -329,6 +372,7 @@ section {
     "gridCard7 gridCard8 gridCard9"
     "gridCard10 gridCard11 gridCard12";
     grid-area: gridMainProductos;
+    justify-items: center;
 }
 
 .gridTituloProductos { 
