@@ -5,7 +5,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(#bde0fe, #ffbf69);
+    background: linear-gradient(to right, #bde0fe, #ffbf69); 
 }
     
 ul {
@@ -74,7 +74,7 @@ a {
     text-decoration-line: underline;
     font-size: 30px;
     font-weight: lighter;
-    color: #E9C46A;
+    color: #E76F51 ;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     margin-left: 2.5rem;
@@ -175,14 +175,12 @@ a {
 .botonComprar {
     color: white;
     font-size: 15px;
-    font-weight: 500;
     margin: 1rem;
     padding: 0.5rem 1.2rem;
     background:#E9C46A;
     border: 2px solid;
     border-color: #E76F51;
     transition: all 1s ease;
-    
 }
 .botonComprar:hover {
     background: #bde0fe;
@@ -234,6 +232,14 @@ section {
     margin: 5rem 0;
 }
 
+.botonFormulario {
+    width: 200px;
+    height: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 35px;
+}
+
 .gridContainer {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -274,8 +280,8 @@ section {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    align-items: center;
-    justify-content: center; 
+    align-items: center; 
+    padding-left: 0;
 }
 
 .gridProductos {  
@@ -377,7 +383,6 @@ section {
 
 .gridTituloProductos { 
     grid-area: gridTituloProductos;
-    margin: 0 6rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -526,11 +531,15 @@ section {
     grid-area: gridFooterContacto; 
 }
 
-@media (max-width:320px) {
+@media (max-width: 767px) {
+
+    html, body {
+        height: 100%;
+    }
     
     .gridContainer {
-        max-width: 320px;
-        height: 1100px;
+        max-width: 100%;
+        height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.5fr 0.3fr;
         grid-template-areas:
@@ -540,64 +549,75 @@ section {
         }
 
     .gridNabvar { 
-        max-width: 320px;
+        width: 100%;
     }    
 
     .fondoVerde {
-        width: 20rem;
-        height: 19rem;
+        width: 100%;
+        height: 18rem;
     }
 
     ul {
         margin: 0;
+        padding: 0;
     }
+
     
     li {
         display: list-item;
-        font-size: 11px;
-        margin-left: 0.5rem;
+        font-size: 23px;
         margin-top: 0;
-        padding: 1rem;
+        margin-right: 0;
+        margin-left: 0.5rem;
+        padding-top: 1.2rem;
+        padding-left: 0;
         text-align: center;
     }
     
     .gridMain { 
         grid-template-columns:  1fr;
-        grid-template-rows: 0.05fr 0.65fr 0.40fr 0.65fr 0.45fr;
+        grid-template-rows: 0.05fr 0.45fr 0.52fr 0.55fr 0.45fr;
         grid-template-areas:
         "gridLogo"
         "gridProductos"
         "gridProductos"
         "gridOfertas"
         "gridOfertas";
-        
+        justify-content: center;
     }
     
-    .logo {
-        max-width: 320px;
-        text-align: center;
+    .gridLogo {
+        max-width: 100%;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
         margin-top: 1rem;
-        
+        padding: 1rem;
     }
 
     .imagenLogo {
-        margin: 1rem 0;
-        max-width: 250px;
+        margin: 0;
+        padding: 0;
+        max-width: 50%;
+    }
+
+    .logoMobile {
+        max-width: 100%;
+        margin: 0;
+
     }
     
     .titulo {
         text-align: center;
-        margin-top: 0;
+        margin-top: 1rem;
         margin-left: 1rem;
-        font-size: 25px;
+        margin-bottom: 0;
+        font-size: 45px;
     }
         
     .subtitulo {
         text-align: center;
-        font-size: 15px;
+        font-size: 35px;
         margin-right: 0.5rem;
         margin-left: 1rem;
         margin-top: 1rem;
@@ -605,13 +625,14 @@ section {
     }
 
     .tituloProd {
-        font-size: 15px;
+        font-size: 35px;
     }
     
     .descripcionSeccion { 
         text-align: left;
-        font-size: 16px;
+        font-size: 30px;
         margin-left: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .gridProductos {  
@@ -622,35 +643,40 @@ section {
         "gridCardProd1" 
         "gridCardProd2" 
         "gridCardProd3";
+        justify-items: center;
     }
 
     .gridProductosTxt {
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .card1 {
-        width: 12rem;
-        height: 18rem;
+        width: 18rem;
+        height: 26rem;
         margin: 1rem 1.5rem;
         padding: 2rem;
     }
 
     .card1 img {
-        width: 8rem;
+        width: 12rem;
         margin: 0 auto;
-        padding: 0
+        padding: 0;
     }
 
     .fuenteCard {
-        font-size: 13px;
+        font-size: 23px;
     }
 
     .nombreProducto {
-        font-size: 14px;
+        font-size: 25px;
+    }
+
+    .botonComprar {
+        font-size: 20px;
     }
 
     .gridOfertas {  
-        max-width: 320px;
+        max-width: 767px;
         margin-top: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.10fr 0.10fr 0.10fr;
@@ -659,43 +685,56 @@ section {
         "gridCardOfertas1" 
         "gridCardOfertas2" 
         "gridCardOfertas3";
-        
+        justify-items: center;
     }
 
     .gridOfertasTxt {
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .card2 {
-        width: 12rem;
-        height: 18rem;
-        margin: 1rem 1.3rem;
+        width: 18rem;
+        height: 26rem;
+        margin: 1rem 1.5rem;
         padding: 2rem;
         
     }
     
     .card2 img {
-        width: 8rem;
+        width: 12rem;
         margin: 0 auto;
         padding: 0;
     }
 
+    .etiquetaDescuento {
+        width: 10rem;
+        height: 1.3rem;
+        margin-top: 5px;
+        margin-right: 9px;
+        font-size: 18px;
+    }
+
     .redesSociales {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .fondoVerdeCel {
-        width: 300px;
+        max-width: 100%;
         height: 10rem;
     }
 
     .fondoVerdeCelProd {
-        width: 320px;
+        max-width: 100%;
         height: 10rem;
     }
 
+    .ul-NabvarProd {
+        max-width: 100%;
+        padding: 0;
+    }
+
     .gridProductosProd {
-        height: 1100px;
+        height: 100px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 5.2fr 1fr;
         grid-template-areas:
@@ -705,11 +744,11 @@ section {
     }
 
     .gridNabvarProductos {
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .fondoVerdeProd {
-        width: 15rem;
+        max-width: 100%;
         height: 15rem;
     }
 
@@ -733,29 +772,26 @@ section {
         "gridCard12"
     }
 
-    .gridTituloProductos {
-        text-align: center;
-        margin-top: 0;
-        margin-left: 1rem;
-        font-size: 25px;
-    }
-
     .gridTxt { 
         grid-area: gridTxt; 
     }
     
     .gridCardCel {
-        width: 12rem;
-        height: 18rem;
+        width: 18rem;
+        height: 26rem;
         margin: 1rem 1.5rem;
         padding: 2rem;
     }
 
+    .card1 img {
+        width: 12rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .gridTituloProductos { 
-        text-align: center;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        font-size: 25px
+        margin-top: 0;
+        margin-left: 0;
     }
     
     .gridTxt { 
@@ -771,12 +807,12 @@ section {
     }
 
     .gridNavbarContacto {
-        max-width: 320px;
+        max-width: 767px;
     }
 
     .fondoVerdeContactoCel {
-        width: 256px;
-        height: 240px;
+        width: 100%;
+        height: 18rem;
     }
 
     .gridMainContacto {  
@@ -788,10 +824,6 @@ section {
         "gridMap";
     }
 
-    .gridTituloContacto {
-        margin-top: 2rem;
-    }
-
     .gridForm {  
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.5fr;
@@ -799,29 +831,27 @@ section {
         "gridTxtContacto"
         "gridFormulario";
     }
-
-    .gridFormulario {
-        width: 320px;
-        
-    }
     
     .gridFormularioCel {
-        height: 400px;
-        margin: 0.5rem;
+        height: 550px;
+        margin: 0.5rem 6rem;
     }
 
     .fieldset {
-        width: 255px;
-        margin-top: 0;
+        width: 500px;
+        height: 500px;
+        font-size: 31px;
+        
     }
 
     .label {
-    font-size: 12px;
+    font-size: 25px;
     }
 
     .textarea {
-        width: 255px;
-        margin-top: 0.5rem;
+        width: 400px;
+        margin: 2rem 4rem;
+        font-size: 20px;
     }
 
     .gridMap {  
@@ -833,133 +863,272 @@ section {
     }
 
     .gridMapa {
-        max-width: 320px;
+        max-width: 100%;
+    }
+
+    .tituloMapaContancto {
+        text-align: center;
+        font-size: 35px;
+        font-weight: lighter;
+        color:#E76F51;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    iframe {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 12rem;
+        margin-right: 0;
     }
 }
 
-    
-@media (width: 768px) {
+@media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
 
-        .gridContainer {  
-            min-width: 768px;
-            grid-template-columns: 256px 256px 256px ;
-            grid-template-rows: 0.2fr 3.2fr 0.3fr;
-            grid-template-areas:
-            "gridNabvar gridNabvar gridNabvar"
-            "gridMain gridMain gridMain"
-            "gridFooter gridFooter gridFooter";
-        }
-    
-        ul {
-            width: 700px;
-            padding: 2.1rem;
-        }
+    .gridContainer {  
+        grid-template-rows: 0.2fr 4.5fr 0.3fr;
+    } 
+
+    .gridNabvar {
+        max-width: 100%;
+    }
+
+    ul {
+        max-width: 100%;
+        padding: 2.1rem;
+    }
+
+    .fondoVerde {
+        max-width: 100%;
+    }
+
+    .listaNavegacion {
+        max-width: 100%;
+    }
+
+    li {
+        font-size: 11.3px;
+        display: inline;
+        text-align: left;
+    }
+
+    a {
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 4rem;
+        margin-left: 11rem;
+        margin-right: 0;
+    }
+
+    .gridMain { 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.6fr 0.5fr;
         
-        li {
-            font-size: 11px;
-            display: inline;
-            text-align: left;
-        }
+    }
     
-        a {
-            margin: 1rem;
-            padding: 0;
-        }
-    
-        .fondoVerde {
-            width: 768px;
-            margin-right: 0;
-        }
-    
-        .logo {
-            margin-top: 4rem;
-            margin-left: 11rem;
-            margin-right: 0;
-        }
-    
-        .gridMain { 
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
-            
-        }
+    .titulo {
+        font-size: 60px;
+    }
+
+    .subtitulo {
+        font-size: 45px;
+    }
+
+    .tituloProd {
+        font-size: 35px;
+    }
+
+    .descripcionSeccion {
+        font-size: 28px;
+    }
+
+    .card1 {
+        width: 7.2rem;
+        height: 21rem;
+        margin: 1rem 1.5rem;
+    }
+
+    .card1 img {
+        width: 7rem;
+        margin: auto
+    }
+
+    .fuenteCard {
+        font-size: 17px;
+    }
+
+    .nombreProducto {
+        font-size: 19px;
+    }
+
+    .card2 {
+        width: 7.2rem;
+        height: 21rem;
+        margin: 1rem 1.5rem;
         
-        .imagenLogo {
-            width: 400px;
-        }
+    }
     
-        .titulo {
-            font-size: 40px;
-        }
-    
-        .subtitulo {
-            font-size: 25px;
-        }
-    
-        .tituloProd {
-            font-size: 20px;
-        }
-    
-        .descripcionSeccion {
-            font-size: 20px;
-            font-weight: lighter;
-            margin: 0.5rem;
-        }
-    
-        .gridProductos {  
-            grid-template-rows: 0.4fr 1fr;
-        }
-    
-        .card1 {
-            width: 7rem;
-            height: 18rem;
-            margin: 1rem 1.5rem;
-        }
-    
-        .card1 img {
-            width: 6rem;
-            margin: auto
-            
-        }
-    
-        .fuenteCard {
-            font-size: 13px;
-        }
-    
-        .nombreProducto {
-            font-size: 14px;
-        }
-    
-        .card2 {
-            width: 7rem;
-            height: 18rem;
-            margin: 1rem 1.5rem;
-            
-        }
+    .card2 img {
+        width: 7rem;
+        margin: auto
+    }
+
+    .etiquetaDescuento {
+        background-size: 10rem;
+        font-size: medium;
+    }
+
+    .ul-NabvarProd { 
+        max-width: 100%;
+        margin-right: 0;
+        padding: 2.1rem;
+    }
+
+    .ul-NabvarContac {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 2.1rem;
+    }
+
+    .gridCardCel {
+        width: 7rem;
+        height: 23rem;
+        margin: 1rem 1.5rem;
+    }
+
+    .redesSociales {
+        font-size: 15px;
+    } 
+}
+
+@media (min-width: 1024px) {
+    html, body {
+        height: 100%;
+    }
+
+    .gridContainer {  
+        grid-template-rows: 0.2fr 4.5fr 0.3fr;
+    } 
+
+    .gridNabvar {
+        max-width: 100%;
+    }
+
+    ul {
+        max-width: 100%;
+        padding: 2.1rem;
+    }
+
+    .fondoVerde {
+        max-width: 100%;
+    }
+
+    .listaNavegacion {
+        max-width: 100%;
+    }
+
+    li {
+        font-size: 16px;
+        display: inline;
+        text-align: left;
+    }
+
+    a {
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    .logo {
+        margin-top: 4rem;
+        margin-left: 11rem;
+        margin-right: 0;
+    }
+
+    .gridMain { 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.6fr 0.5fr;
         
-        .card2 img {
-            width: 6rem;
-            margin: auto;
-        }
+    }
+    
+    .titulo {
+        font-size: 60px;
+    }
 
-        .ul-NabvarProd { 
-            max-width: 700px;
-            margin-right: 0;
-            padding: 2.1rem;
-        }
+    .subtitulo {
+        font-size: 45px;
+    }
 
-        .ul-NabvarContac {
-            max-width: 700px;
-            margin-right: 0;
-            padding: 2.1rem;
-        }
+    .tituloProd {
+        font-size: 40px;
+    }
 
-        .gridCardCel {
-            width: 7rem;
-            height: 18rem;
-            margin: 1rem 1.5rem;
-        }
+    .descripcionSeccion {
+        font-size: 35px;
+    }
 
-        .redesSociales {
-            font-size: 13px;
-        }
+    .card1 {
+        width: 11rem;
+        height: 21rem;
+        margin: 1rem 1.5rem;
+    }
+
+    .card1 img {
+        width: 8rem;
+        margin: auto
+        
+    }
+
+    .fuenteCard {
+        font-size: 19px;
+    }
+
+    .nombreProducto {
+        font-size: 20px;
+    }
+
+    .card2 {
+        width: 11rem;
+        height: 21rem;
+        margin: 1rem 1.5rem;
+        
+    }
+    
+    .card2 img {
+        width: 8rem;
+        margin: auto;
+    }
+
+    .etiquetaDescuento {
+        background-size: 10rem;
+        font-size: medium;
+    }
+
+    .ul-NabvarProd { 
+        max-width: 100%;
+        margin-right: 0;
+        padding: 2.1rem;
+    }
+
+    .ul-NabvarContac {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 2.1rem;
+    }
+
+    .gridCardCel {
+        width: 11rem;
+        height: 21rem;
+        margin: 1rem 1.5rem;
+    }
+
+    .redesSociales {
+        font-size: 15px;
+    } 
 }
