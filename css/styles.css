@@ -531,7 +531,7 @@ section {
     grid-area: gridFooterContacto; 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     html, body {
         height: 100%;
@@ -881,130 +881,6 @@ section {
         margin-left: 12rem;
         margin-right: 0;
     }
-}
-
-@media (min-width: 768px) {
-    html, body {
-        height: 100%;
-    }
-
-    .gridContainer {  
-        grid-template-rows: 0.2fr 4.5fr 0.3fr;
-    } 
-
-    .gridNabvar {
-        max-width: 100%;
-    }
-
-    ul {
-        max-width: 100%;
-        padding: 2.1rem;
-    }
-
-    .fondoVerde {
-        max-width: 100%;
-    }
-
-    .listaNavegacion {
-        max-width: 100%;
-    }
-
-    li {
-        font-size: 11.3px;
-        display: inline;
-        text-align: left;
-    }
-
-    a {
-        margin: 1rem;
-        padding: 0;
-    }
-
-    .logo {
-        margin-top: 4rem;
-        margin-left: 11rem;
-        margin-right: 0;
-    }
-
-    .gridMain { 
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.6fr 0.5fr;
-        
-    }
-    
-    .titulo {
-        font-size: 60px;
-    }
-
-    .subtitulo {
-        font-size: 45px;
-    }
-
-    .tituloProd {
-        font-size: 35px;
-    }
-
-    .descripcionSeccion {
-        font-size: 28px;
-    }
-
-    .card1 {
-        width: 7.2rem;
-        height: 21rem;
-        margin: 1rem 1.5rem;
-    }
-
-    .card1 img {
-        width: 7rem;
-        margin: auto
-    }
-
-    .fuenteCard {
-        font-size: 17px;
-    }
-
-    .nombreProducto {
-        font-size: 19px;
-    }
-
-    .card2 {
-        width: 7.2rem;
-        height: 21rem;
-        margin: 1rem 1.5rem;
-        
-    }
-    
-    .card2 img {
-        width: 7rem;
-        margin: auto
-    }
-
-    .etiquetaDescuento {
-        background-size: 10rem;
-        font-size: medium;
-    }
-
-    .ul-NabvarProd { 
-        max-width: 100%;
-        margin-right: 0;
-        padding: 2.1rem;
-    }
-
-    .ul-NabvarContac {
-        max-width: 100%;
-        margin-right: 0;
-        padding: 2.1rem;
-    }
-
-    .gridCardCel {
-        width: 7rem;
-        height: 23rem;
-        margin: 1rem 1.5rem;
-    }
-
-    .redesSociales {
-        font-size: 15px;
-    } 
 }
 
 @media (min-width: 1024px) {
