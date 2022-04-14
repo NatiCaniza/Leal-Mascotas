@@ -65,7 +65,6 @@ input {
 .subtitulo {
     text-align: center;
     font-size: 35px;
-    font-weight: lighter;
     color: #2A9D8F;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -249,20 +248,24 @@ section {
     .titulo {
         font-size: 35px;
         margin: 1rem auto;
+        font-weight: bolder;
     }
     
     .subtitulo {
         font-size: 25px;
         margin: 1rem auto;
+        font-weight: bolder;
     }
     
     .descripcionSeccion {
         font-size: 20px;
+        font-weight: bolder;
     }
 
     .tituloProd {
         font-size: 25px;
         margin: 0.5rem auto;
+        font-weight: bolder;
     }
 
     .input-border-width {
