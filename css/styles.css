@@ -7,37 +7,51 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(to right, #bde0fe, #ffbf69); 
 }
-    
-ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 2rem 2rem;
+
+.colorBarra {
+    background:#2A9D8F;
 }
 
-.fondoVerde {
-    background-color: #2A9D8F;
-    }
-
-
-li {
-    display: inline;
-    font-size: 20px;
-    margin: 0.5rem;
+input {
+    height: 40px;
 }
 
-a {
-    text-decoration: none;
-    color: #bde0fe;
-    padding: 2rem;
+.inputNavbar {
+    margin-top: 1rem;
 }
 
-.listaNavegacion a:hover {
-    color: #E9C46A;
+.navbar-light .navbar-nav .nav-link {
+    color: #F4A261;
+    padding: 0 2.5rem;
 }
 
-.imagenLogo {
-    justify-content: center;
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#bde0fe;
+}
+
+.navbar-light .navbar-brand {
+    color: #F4A261;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #bde0fe ;
+}
+
+.botonNavbar {
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin: 1rem;
+    background:#E9C46A;
+    border: 2px solid;
+    border-color: #E76F51;
+    transition: all 1s ease;
+}
+
+.botonNavbar:hover {
+    background: #bde0fe;
+    border-color: #264653;
+    color: #264653;
 }
 
 .titulo {
@@ -58,23 +72,30 @@ a {
 }
 
 .logoIndex {
-    width: 600px;
+    max-width: 100%;
+    margin: 2rem auto;
+    display: block;
+    
 }
 
 .logosLargos {
     width: 550px;
+    margin: 2rem auto;
+    display: block;
 }
 
 .logosCortos {
     width: 400px;
     height: 100px;
+    margin: 2rem auto;
+    display: block;
 }
 
 .tituloProd {
     text-decoration-line: underline;
     font-size: 30px;
     font-weight: lighter;
-    color: #E76F51 ;
+    color: #E76F51;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     margin-left: 2.5rem;
@@ -95,84 +116,38 @@ a {
     margin: 0;
 }
 
-.fuenteCard {
-    margin: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+.card {
+    display: inline;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 18rem;
+    background-color: #F4A261;
+    
+}
+
+.card-border{
+    border:solid 10px #2A9D8F;
+    border-radius: 20px;
+}
+
+.card-body {
+    background-color: #F4A261;
+    height: 14rem;
+}
+
+.card-title {
+    color: #2A9D8F;;
+}
+
+.card-text {
     color: white;
 }
 
-.card1 {
-    background-color: #2A9D8F;
-    width: 15rem;
-    height: 23rem;
-    margin: 3rem 2rem;
-    padding: 2.5rem;
-    border: #F4A261;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-radius: 2rem;
+.card-justify{
+    justify-content: space-evenly;
 }
 
-.card1 img {
-    display: block;
-    width: 13rem;
-    margin: 0 auto;
-    border: #F4A261;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-radius: 2rem;
-}
-
-.card2 {
-    background-color: #F4A261;
-    width: 15rem;
-    height: 23rem;
-    margin: 3rem 2rem;
-    padding: 2.5rem;
-    border: #2A9D8F;
-    border-style: dashed;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-radius: 2rem;
-    position: relative;
-}
-
-.etiquetaDescuento {
-    background-color: #2A9D8F;
-    background-size: 5rem;
-    font-size: small;
-    margin-top: 5px;
-    margin-right: 9px;
-    padding: 0.2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.card2 img {
-    display: block;
-    width: 13rem;
-    margin: 0 auto;
-    border: #2A9D8F;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-radius: 2rem;
-}
-
-.cardProductos {
-    background-color: #2A9D8F;
-    width: 15rem;
-    height: 23rem;
-    margin: 3rem 2rem;
-    padding: 2.5rem;
-    border: #F4A261;
-    border-style: solid;
-    border-width: 0.5rem;
-    border-radius: 2rem;
-}
-
-.botonComprar {
+.color-boton {
     color: white;
     font-size: 15px;
     margin: 1rem;
@@ -182,43 +157,69 @@ a {
     border-color: #E76F51;
     transition: all 1s ease;
 }
-.botonComprar:hover {
+.color-boton:hover {
     background: #bde0fe;
     border-color: #264653;
     color: #264653;
 }
 
-input {
-    width: 169px;
-    height: 25px;
+
+.input-border-width {
+    width: 25rem;
     transition: all;
 }
 
-input:focus {
-    width: 350px;
-    height: px;
+.input-border-width:focus {
+    width: 30rem;
     font-size: 20px;
-
 }
 
-.placeholder {
-    height: 161px; 
-    width: 537px;
+.form-label {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.form {
+    width: auto;
+    margin: 2rem auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #F4A261;
+}
+
+.tituloMapaContancto {
+    text-decoration-line: underline;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #E76F51;
+    margin: 2rem 0;
+}
+
+.mapa {
+    margin: 3rem 0;
 }
 
 section {
     display: flex;
 }
 
-.redesSociales {
-    margin: 0.5rem;
-    color: #F4A261;
+.fondoVerdeFooter {
+    background-color: #2A9D8F;
+    max-width: 100%;
+    height: 225px;
+    
+}
+
+.text-muted {
+    color:#F4A261!important;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .redesSociales img {
-    margin: 0.5rem;
+    margin-top: 1rem;
     display: inline-block;
-    width: 5%;
+    width: 10%;
 }
 
 .pieDePagina img {
@@ -226,785 +227,59 @@ section {
     width: 15%;
 }
 
-.formulario {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #F4A261;
-    margin: 5rem 0;
-}
-
 .botonFormulario {
-    width: 200px;
+    width: 100px;
     height: 40px;
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-left: 35px;
+    margin-left: 130px;
 }
 
-.gridContainer {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 4.5fr 0.2fr; 
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridNabvar gridNabvar gridNabvar"
-    "gridMain gridMain gridMain"
-    "gridFooter gridFooter gridFooter";
+.card {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.gridNabvar { 
-    grid-area: gridNabvar; 
-}
 
-.gridMain { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridLogo gridLogo gridLogo"
-    "gridProductos gridProductos gridProductos"
-    "gridProductos gridProductos gridProductos"
-    "gridOfertas gridOfertas gridOfertas"
-    "gridOfertas gridOfertas gridOfertas";
-    grid-area: gridMain;
-    justify-content: center;
-}
-
-.gridLogo { 
-    grid-area: gridLogo;
-    margin: 1rem 6rem;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center; 
-    padding-left: 0;
-}
-
-.gridProductos {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridProductosTxt gridProductosTxt gridProductosTxt"
-    "gridCardProd1 gridCardProd2 gridCardProd3";
-    grid-area: gridProductos;
-    justify-items: center;
-}
-
-.gridProductosTxt { 
-    grid-area: gridProductosTxt; 
-}
-
-.gridCardProd1 { 
-    grid-area: gridCardProd1; 
-}
-
-.gridCardProd2 { 
-    grid-area: gridCardProd2; 
-}
-
-.gridCardProd3 { 
-    grid-area: gridCardProd3; 
-}
-
-.gridOfertas {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridOfertasTxt gridOfertasTxt gridOfertasTxt"
-    "gridCardOfertas1 gridCardOfertas2 gridCardOfertas3";
-    grid-area: gridOfertas;
-    justify-items: center;
-}
-
-.gridOfertasTxt { 
-    grid-area: gridOfertasTxt; 
-}
-
-.gridCardOfertas1 { 
-    grid-area: gridCardOfertas1; 
-}
-
-.gridCardOfertas2 { 
-    grid-area: gridCardOfertas2; 
-}
-
-.gridCardOfertas3 { 
-    grid-area: gridCardOfertas3; 
-}
-
-.gridFooter { 
-    grid-area: gridFooter; 
-}
-
-.gridProductosProd {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 3fr 0.1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridNabvarProductos gridNabvarProductos gridNabvarProductos"
-    "gridMainProductos gridMainProductos gridMainProductos"
-    "gridFooterProductos gridFooterProductos gridFooterProductos";
-}
-
-.gridNabvarProductos { 
-    grid-area: gridNabvarProductos; 
-}
-
-.gridMainProductos {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridTituloProductos gridTituloProductos gridTituloProductos"
-    "gridTxt gridTxt gridTxt"
-    "gridCard1 gridCard2 gridCard3"
-    "gridCard4 gridCard5 gridCard6"
-    "gridCard7 gridCard8 gridCard9"
-    "gridCard10 gridCard11 gridCard12";
-    grid-area: gridMainProductos;
-    justify-items: center;
-}
-
-.gridTituloProductos { 
-    grid-area: gridTituloProductos;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.gridTxt { 
-    grid-area: gridTxt; 
-}
-
-.gridCard1 { 
-    grid-area: gridCard1; 
-}
-
-.gridCard2 { 
-    grid-area: gridCard2; 
-}
-
-.gridCard3 { 
-    grid-area: gridCard3; 
-}
-
-.gridCard4 { 
-    grid-area: gridCard4; 
-}
-
-.gridCard5 { 
-    grid-area: gridCard5; 
-}
-
-.gridCard6 { 
-    grid-area: gridCard6; 
-}
-
-.gridCard7 { 
-    grid-area: gridCard7; 
-}
-
-.gridCard8 { 
-    grid-area: gridCard8; 
-}
-
-.gridCard9 { 
-    grid-area: gridCard9; 
-}
-
-.gridCard10 { 
-    grid-area: gridCard10; 
-}
-
-.gridCard11 { 
-    grid-area: gridCard11; 
-}
-
-.gridCard12 { 
-    grid-area: gridCard12; 
-}
-
-.gridFooterProductos { 
-    grid-area: gridFooterProductos; 
-}
-
-.gridContacto {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 3fr 0.1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridNavbarContacto gridNavbarContacto gridNavbarContacto"
-    "gridMainContacto gridMainContacto gridMainContacto"
-    "gridFooterContacto gridFooterContacto gridFooterContacto";
-}
-
-.gridNavbarContacto {
-    grid-area: gridNavbarContacto; 
-}
-
-.gridMainContacto {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridTituloContacto gridTituloContacto gridTituloContacto"
-    "gridForm gridForm gridForm"
-    "gridMap gridMap gridMap";
-    grid-area: gridMainContacto;
-}
-
-.gridTituloContacto { 
-    grid-area: gridTituloContacto;
-    margin: 0 6rem;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center; 
-}
-
-.gridForm {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridTxtContacto gridTxtContacto gridTxtContacto"
-    "gridFormulario gridFormulario gridFormulario";
-    grid-area: gridForm;
-}
-
-.gridTxtContacto { 
-    grid-area: gridTxtContacto; 
-}
-
-.gridFormulario { 
-    grid-area: gridFormulario; 
-}
-
-.gridMap {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "gridTxtContacto2 gridTxtContacto2 gridTxtContacto2"
-    "gridMapa gridMapa gridMapa";
-    grid-area: gridMap;
-}
-
-.gridTxtContacto2 {
-    grid-area: gridTxtContacto2; 
-}
-
-.gridMapa { 
-    grid-area: gridMapa; 
-}
-
-.gridFooterContacto { 
-    grid-area: gridFooterContacto; 
-}
-
-@media (max-width: 768px) {
-
-    html, body {
-        height: 100%;
-    }
-    
-    .gridContainer {
-        max-width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.5fr 0.3fr;
-        grid-template-areas:
-            "gridNabvar"
-            "gridMain"
-            "gridFooter";
-        }
-
-    .gridNabvar { 
-        width: 100%;
-    }    
-
-    .fondoVerde {
-        width: 100%;
-        height: 18rem;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    
-    li {
-        display: list-item;
-        font-size: 23px;
-        margin-top: 0;
-        margin-right: 0;
-        margin-left: 0.5rem;
-        padding-top: 1.2rem;
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .gridMain { 
-        grid-template-columns:  1fr;
-        grid-template-rows: 0.05fr 0.45fr 0.52fr 0.55fr 0.45fr;
-        grid-template-areas:
-        "gridLogo"
-        "gridProductos"
-        "gridProductos"
-        "gridOfertas"
-        "gridOfertas";
-        justify-content: center;
-    }
-    
-    .gridLogo {
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-
-    .imagenLogo {
-        margin: 0;
-        padding: 0;
-        max-width: 50%;
-    }
-
-    .logoMobile {
-        max-width: 100%;
-        margin: 0;
-
+@media (max-width:425px) {
+    .logoIndex {
+        margin: 1rem auto;
     }
     
     .titulo {
-        text-align: center;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-bottom: 0;
-        font-size: 45px;
-    }
-        
-    .subtitulo {
-        text-align: center;
         font-size: 35px;
-        margin-right: 0.5rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .tituloProd {
-        font-size: 35px;
+        margin: 1rem auto;
     }
     
-    .descripcionSeccion { 
-        text-align: left;
-        font-size: 30px;
-        margin-left: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .gridProductos {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.01fr 0.10fr 0.10fr 0.10fr;
-        grid-template-areas:
-        "gridProductosTxt"
-        "gridCardProd1" 
-        "gridCardProd2" 
-        "gridCardProd3";
-        justify-items: center;
-    }
-
-    .gridProductosTxt {
-        max-width: 100%;
-    }
-
-    .card1 {
-        width: 18rem;
-        height: 26rem;
-        margin: 1rem 1.5rem;
-        padding: 2rem;
-    }
-
-    .card1 img {
-        width: 12rem;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .fuenteCard {
-        font-size: 23px;
-    }
-
-    .nombreProducto {
+    .subtitulo {
         font-size: 25px;
+        margin: 1rem auto;
     }
-
-    .botonComprar {
+    
+    .descripcionSeccion {
         font-size: 20px;
-    }
-
-    .gridOfertas {  
-        max-width: 767px;
-        margin-top: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.10fr 0.10fr 0.10fr;
-        grid-template-areas:
-        "gridOfertasTxt"
-        "gridCardOfertas1" 
-        "gridCardOfertas2" 
-        "gridCardOfertas3";
-        justify-items: center;
-    }
-
-    .gridOfertasTxt {
-        max-width: 100%;
-    }
-
-    .card2 {
-        width: 18rem;
-        height: 26rem;
-        margin: 1rem 1.5rem;
-        padding: 2rem;
-        
-    }
-    
-    .card2 img {
-        width: 12rem;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .etiquetaDescuento {
-        width: 10rem;
-        height: 1.3rem;
-        margin-top: 5px;
-        margin-right: 9px;
-        font-size: 18px;
-    }
-
-    .redesSociales {
-        font-size: 22px;
-    }
-
-    .fondoVerdeCel {
-        max-width: 100%;
-        height: 10rem;
-    }
-
-    .fondoVerdeCelProd {
-        max-width: 100%;
-        height: 10rem;
-    }
-
-    .ul-NabvarProd {
-        max-width: 100%;
-        padding: 0;
-    }
-
-    .gridProductosProd {
-        height: 100px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 5.2fr 1fr;
-        grid-template-areas:
-        "gridNabvarProductos"
-        "gridMainProductos"
-        "gridFooterProductos";
-    }
-
-    .gridNabvarProductos {
-        max-width: 100%;
-    }
-
-    .fondoVerdeProd {
-        max-width: 100%;
-        height: 15rem;
-    }
-
-    .gridMainProductos {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "gridTituloProductos"
-        "gridTxt"
-        "gridCard1"
-        "gridCard2"
-        "gridCard3"
-        "gridCard4"
-        "gridCard5"
-        "gridCard6"
-        "gridCard7"
-        "gridCard8"
-        "gridCard9"
-        "gridCard10"
-        "gridCard11"
-        "gridCard12"
-    }
-
-    .gridTxt { 
-        grid-area: gridTxt; 
-    }
-    
-    .gridCardCel {
-        width: 18rem;
-        height: 26rem;
-        margin: 1rem 1.5rem;
-        padding: 2rem;
-    }
-
-    .card1 img {
-        width: 12rem;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .gridTituloProductos { 
-        margin-top: 0;
-        margin-left: 0;
-    }
-    
-    .gridTxt { 
-        grid-area: gridTxt; 
-    }
-
-    .gridContacto {  
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "gridNavbarContacto"
-        "gridMainContacto"
-        "gridFooterContacto";
-    }
-
-    .gridNavbarContacto {
-        max-width: 767px;
-    }
-
-    .fondoVerdeContactoCel {
-        width: 100%;
-        height: 18rem;
-    }
-
-    .gridMainContacto {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.02fr 1fr 1fr;
-        grid-template-areas:
-        "gridTituloContacto"
-        "gridForm"
-        "gridMap";
-    }
-
-    .gridForm {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr;
-        grid-template-areas:
-        "gridTxtContacto"
-        "gridFormulario";
-    }
-    
-    .gridFormularioCel {
-        height: 550px;
-        margin: 0.5rem 6rem;
-    }
-
-    .fieldset {
-        width: 500px;
-        height: 500px;
-        font-size: 31px;
-        
-    }
-
-    .label {
-    font-size: 25px;
-    }
-
-    .textarea {
-        width: 400px;
-        margin: 2rem 4rem;
-        font-size: 20px;
-    }
-
-    .gridMap {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr;
-        grid-template-areas:
-        "gridTxtContacto2"
-        "gridMapa";
-    }
-
-    .gridMapa {
-        max-width: 100%;
-    }
-
-    .tituloMapaContancto {
-        text-align: center;
-        font-size: 35px;
-        font-weight: lighter;
-        color:#E76F51;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    iframe {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-left: 12rem;
-        margin-right: 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    html, body {
-        height: 100%;
-    }
-
-    .gridContainer {  
-        grid-template-rows: 0.2fr 4.5fr 0.3fr;
-    } 
-
-    .gridNabvar {
-        max-width: 100%;
-    }
-
-    ul {
-        max-width: 100%;
-        padding: 2.1rem;
-    }
-
-    .fondoVerde {
-        max-width: 100%;
-    }
-
-    .listaNavegacion {
-        max-width: 100%;
-    }
-
-    li {
-        font-size: 16px;
-        display: inline;
-        text-align: left;
-    }
-
-    a {
-        margin: 1rem;
-        padding: 0;
-    }
-
-
-    .logo {
-        margin-top: 4rem;
-        margin-left: 11rem;
-        margin-right: 0;
-    }
-
-    .gridMain { 
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.6fr 0.5fr;
-        
-    }
-    
-    .titulo {
-        font-size: 60px;
-    }
-
-    .subtitulo {
-        font-size: 45px;
     }
 
     .tituloProd {
-        font-size: 40px;
+        font-size: 25px;
+        margin: 0.5rem auto;
     }
 
-    .descripcionSeccion {
-        font-size: 35px;
-    }
-
-    .card1 {
-        width: 11rem;
-        height: 21rem;
-        margin: 1rem 1.5rem;
-    }
-
-    .card1 img {
-        width: 8rem;
-        margin: auto
-        
-    }
-
-    .fuenteCard {
-        font-size: 19px;
-    }
-
-    .nombreProducto {
-        font-size: 20px;
-    }
-
-    .card2 {
-        width: 11rem;
-        height: 21rem;
-        margin: 1rem 1.5rem;
-        
+    .input-border-width {
+        width: 20rem;
     }
     
-    .card2 img {
-        width: 8rem;
-        margin: auto;
-    }
-
-    .etiquetaDescuento {
-        background-size: 10rem;
-        font-size: medium;
-    }
-
-    .ul-NabvarProd { 
-        max-width: 100%;
-        margin-right: 0;
-        padding: 2.1rem;
-    }
-
-    .ul-NabvarContac {
-        max-width: 100%;
-        margin-right: 0;
-        padding: 2.1rem;
-    }
-
-    .gridCardCel {
-        width: 11rem;
-        height: 21rem;
-        margin: 1rem 1.5rem;
-    }
-
-    .redesSociales {
+    .input-border-width:focus {
+        width: 23rem;
         font-size: 15px;
-    } 
+    }
+}
+
+@media (max-width:767px) {
+    .fondoVerdeFooter {
+        background-color: #2A9D8F;
+        max-width: 100%;
+        height: 350px;
+        
+    }
 }

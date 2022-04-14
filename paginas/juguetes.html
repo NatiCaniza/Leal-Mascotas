@@ -4,157 +4,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/logo_small_small.png" type="image/x-icon">
     <title>Leal Mascotas</title>
 
 </head>
 
-<body class="gridProductosProd">
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg navbar-light colorBarra listaNavegacion">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/accesoriosdepaseo.html">Accesorios de Paseo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juguetes.html">Juguetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/cuidadoehigiene.html">Cuidado e Higiene</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2 inputNavbar" type="search" placeholder="Artículo" aria-label="Search">
+                    <button class="btn btn-outline-success botonNavbar" type="submit">Buscar</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+    </div>
 
-    <header class="gridNabvarProductos">
-        <nav>
-            <ul class="fondoVerde fondoVerdeContactoCel ul-NabvarProd listaNavegacion">
-                <li>
-                    <a href="../index.html">PRINCIPAL</a>
-                </li>
-
-                <li>
-                    <a href="../paginas/accesoriosdepaseo.html">ACCESORIOS DE PASEO</a>
-                </li>
-
-                <li>
-                    <a href="juguetes.html">JUGUETES</a>
-                </li>
-
-                <li>
-                    <a href="../paginas/cuidadoehigiene.html">CUIDADO E HIGIENE</a>
-                </li>
-
-                <li>
-                    <a href="../paginas/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="gridMainProductos">
+    <div class="container-fluid">
+        <section class="row">
+            <div  class="row">
+                <img class="logosCortos d-block mx-auto" src="../img/logo_juguetes.png" alt="Logo Juguetes">
+            </div>
+            <div class="descripcionSeccion row">
+                <p>Tenemos las mejores opciones para el momento de compartir y jugar con tus mascotas, llenálos de diversion!</p>
+            </div>
+    
+            <div class="row card-justify">
+                <div class="card card-border" style="width: 18rem;">
+                    <img src="../img/mix-de-Pelotas.jpg" class="card-img-top" alt="Pelotas blandas, 4 unidades">
+                    <div class="card-body">
+                    <h5 class="card-title">Mix de Pelotas</h5>
+                    <p class="card-text">Pelotas blandas - 4 unidades</p>
+                    <p class="card-text">$500</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-border" style="width: 18rem;">
+                    <img src="../img/pelota de soga.jpg" class="card-img-top" alt="Pelota de Soga">
+                    <div class="card-body">
+                    <h5 class="card-title">Pelota de Soga</h5>
+                    <p class="card-text">10cm de diámetro - 2 unidades</p>
+                    <p class="card-text">$400</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-border" style="width: 18rem;">
+                    <img src="../img/pelota-dispensador-alimento.jpg" class="card-img-top" alt="Pelota dispensador de alimento">
+                    <div class="card-body">
+                    <h5 class="card-title">Pelota Dispensador de alimento</h5>
+                    <p class="card-text">10cm de diámetro - Unico color</p>
+                    <p class="card-text">Rellenable</p>
+                    <p class="card-text">$500</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row card-justify">
+                <div class="card card-border col-lg-6" style="width: 18rem;">
+                    <img src="../img/mordillo-hueso.jpg" class="card-img-top" alt="Mordillo para perros forma de hueso">
+                    <div class="card-body">
+                    <h5 class="card-title">Mordillo Hueso</h5>
+                    <p class="card-text">10cm de largo</p>
+                    <p class="card-text">$200</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-border" style="width: 18rem;">
+                    <img src="../img/mordillo-redondo.jpg" class="card-img-top" alt="Mordillo para perros redondo">
+                    <div class="card-body">
+                    <h5 class="card-title">Mordillo Redondo</h5>
+                    <p class="card-text">8cm de diámetro</p>
+                    <p class="card-text">$250</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-border" style="width: 18rem;">
+                    <img src="../img/hueso-goma.jpg" class="card-img-top" alt="Hueso de goma">
+                    <div class="card-body">
+                    <h5 class="card-title">Hueso de Goma</h5>
+                    <p class="card-text">10cm de largo</p>
+                    <p class="card-text">$500</p>
+                    <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                    </div>
+                </div>
+            </div>
+    
+                <div class="row card-justify">
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/juguete-2-ratas-con-plumas.jpg" class="card-img-top" alt="Dos ratitas de tela con plumas">
+                        <div class="card-body">
+                        <h5 class="card-title">Ratitas con Plumas</h5>
+                        <p class="card-text">2 unidades</p>
+                        <p class="card-text">$500</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
         
-        <div class="gridTituloProductos">
-            <img class="logosCortos" src="../img/logo_juguetes.png" alt="Logo Juguetes">
-        </div>
-        <div class="descripcionSeccion gridTxt">
-            <p>Tenemos las mejores opciones para el momento de compartir y jugar con tus mascotas, llenálos de diversion!</p>
-        </div>
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/juguete-base-con-3-ratas.jpg" class="card-img-top" alt="Base con tres ratitas">
+                        <div class="card-body">
+                        <h5 class="card-title">Base con Ratitas</h5>
+                        <p class="card-text">30cm de largo</p>
+                        <p class="card-text">$700</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
+        
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/caña-de-pescar-con-raton.jpg" class="card-img-top" alt="Caña de pescar con ratón">
+                        <div class="card-body">
+                        <h5 class="card-title">Caña Pesca-ratones</h5>
+                        <p class="card-text">50cm de largo</p>
+                        <p class="card-text">$500</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row card-justify">
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/puntero-led.jpg" class="card-img-top" alt="Punero led para gatos">
+                        <div class="card-body">
+                        <h5 class="card-title">Puntero Led</h5>
+                        <p class="card-text">Forma de pez - Led rojo</p>
+                        <p class="card-text">$800</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
+        
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/tunel-para-gato-oruga.jpg" class="card-img-top" alt="Túnel para gatos con forma de oruga">
+                        <div class="card-body">
+                        <h5 class="card-title">Túnel Oruga</h5>
+                        <p class="card-text">1 metro de largo</p>
+                        <p class="card-text">$1000</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
+        
+                    <div class="card card-border" style="width: 18rem;">
+                        <img src="../img/arañador-gato.jpg" class="card-img-top" alt="Arañador para gatos">
+                        <div class="card-body">
+                        <h5 class="card-title">Arañador Triángulo</h5>
+                        <p class="card-text">30cm de alto</p>
+                        <p class="card-text">$1500</p>
+                        <a href="#" class="btn btn-primary color-boton">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
 
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard1 gridCardCel">
-            <img src="../img/Mix-de-Pelotas.jpg" alt="Pelotas de goma">
-            <p class="nombreProducto">Mix de pelotas</p>
-            <p>8 cm de diámetro - 4 unidades</p>
-            <p>$500</p>
-            <button class="botonComprar">Comprar</button>
+    <footer class="container-fluid fondoVerdeFooter redesSociales">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 text-left">
+            <h6 class="text-muted lead">Contacto</h6>
+            <h6 class="text-muted">
+                Mitre 55 - Galeria La Continental - Local 7<br>
+                Salta Capital<br>
+            </h6>
         </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard2 gridCardCel">
-            <img src="../img/pelota de soga.jpg" alt="Pelota de soga">
-            <p class="nombreProducto">Pelota de soga multicolor</p>
-            <p>9 cm de diámetro - 2 unidades</p>
-            <p>$200</p>
-            <button class="botonComprar">Comprar</button>
+    
+        <div class="col-xs-12 col-md-6 text-right">
+            <h6 class="text-muted lead">Seguinos en nuestras redes!</h6>
+            <div class="redesSociales">
+                <img src="../img/iconmonstr-facebook-3-240 (1).png" alt="Icono de Facebook">
+                <img src="../img/iconmonstr-instagram-13-240 (1).png" alt="Icono de Instagram">
+                <img src="../img/iconmonstr-twitter-3-240.png" alt="Icono de Twitter">
+            </div>
         </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard3 gridCardCel">
-            <img src="../img/pelota-dispensador-alimento.jpg" alt="Pelota dispensador de alimento para perros">
-            <p class="nombreProducto">Pelota dispensador de alimento</p>
-            <p>10 cm de diámetro - Color amarillo</p>
-            <p>$50</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard4 gridCardCel">
-            <img src="../img/hueso-goma.jpg" alt="Hueso de goma">
-            <p class="nombreProducto">Hueso de goma</p>
-            <p>12 cm de largo - 3 unidades</p>
-            <p>$500</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard5 gridCardCel">
-            <img src="../img/mordillo-hueso.jpg" alt="Mordillo de goma forma hueso">
-            <p class="nombreProducto">Mordillo con forma hueso</p>
-            <p>10 cm de largo - 2 unidades</p>
-            <p>$300</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard6 gridCardCel">
-            <img src="../img/mordillo-redondo.jpg" alt="Mordillo de goma redondo">
-            <p class="nombreProducto">Mordillo de goma redondo</p>
-            <p>10 cm de diámetro - Color azul</p>
-            <p>$300</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard7 gridCardCel">
-            <img src="../img/juguete-2-ratas-con-plumas.jpg" alt="Ratitas de tela con plumas">
-            <p class="nombreProducto">Ratitas de tela con plumas</p>
-            <p>2 unidaes</p>
-            <p>$300</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard8 gridCardCel">
-            <img src="../img/caña-de-pescar-con-raton.jpg" alt="Caña de pescar con ratón de juguete">
-            <p class="nombreProducto">Caña de pescar con ratón</p>
-            <p>Caña con ratón de peluche</p>
-            <p>$400</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard9 gridCardCel">
-            <img src="../img/juguete-base-con-3-ratas.jpg" alt="Juguetes con base y tres ratitas con resorte">
-            <p class="nombreProducto">Juguete base con tres ratitas</p>
-            <p>30 cm de alto</p>
-            <p>$700</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard11 gridCardCel">
-            <img src="../img/puntero-led.jpg" alt="Puntero led forma de pez">
-            <p class="nombreProducto">Puntero led</p>
-            <p>Forma de pez</p>
-            <p>$800</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard12 gridCardCel">
-            <img src="../img/tunel-para-gato-oruga.jpg" alt="Tunel para gatos forma de oruga">
-            <p class="nombreProducto">Tunel con forma de oruga</p>
-            <p>3 metros de largo</p>
-            <p>$700</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-
-        <div class="card img1 card1 cardProductos fuenteCard gridCard10 gridCardCel">
-            <img src="../img/arañador-gato.jpg" alt="Arañador para gatos forma triangular">
-            <p class="nombreProducto">Arañador para gatos</p>
-            <p>30 cm de alto</p>
-            <p>$700</p>
-            <button class="botonComprar">Comprar</button>
-        </div>
-    </section>
-
-    <footer class="fondoVerde gridFooterProductos fondoVerdeCel fondoVerdeCelProd">
-        <div class="redesSociales">
-            <p>Seguinos en nuestras redes!</p>
-            <img src="../img/iconmonstr-facebook-3-240 (1).png" alt="Icono de Facebook">
-            <img src="../img/iconmonstr-instagram-13-240 (1).png" alt="Icono de Instagram">
-            <img src="../img/iconmonstr-twitter-3-240.png" alt="Icono de Twitter">
-            <p>Mitre 55 - Galeria La Continental - Local 7 - Salta Capital</p>
-            <p>Todos los derechos reservados - 2022</p>
+    </div>
+    <div class="row"> 
+        <div class="col-md-12 text-right">
+        <p class="text-muted small redesSociales">Natalia Caniza Toral @2022<br> Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
