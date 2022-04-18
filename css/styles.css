@@ -120,7 +120,7 @@ input {
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 18rem;
-    background-color: #F4A261;
+    background-color:#ffbf69;
     
 }
 
@@ -130,7 +130,7 @@ input {
 }
 
 .card-body {
-    background-color: #F4A261;
+    background: linear-gradient(#bde0fe, #ffbf69);
     height: 14rem;
 }
 
@@ -162,6 +162,20 @@ input {
     color: #264653;
 }
 
+.form {
+    width: auto;
+    margin: 2rem auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2A9D8F;
+}
+
+.formContainer {
+    width: 27.5rem;
+    border:solid 1px;
+    border-color: #2A9D8F;
+    border-radius: 20px;
+    background: linear-gradient(to left, #bde0fe, #ffbf69);
+}
 
 .input-border-width {
     width: 25rem;
@@ -176,13 +190,6 @@ input {
 .form-label {
     margin-top: 2rem;
     margin-bottom: 0;
-}
-
-.form {
-    width: auto;
-    margin: 2rem auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #F4A261;
 }
 
 .tituloMapaContancto {
@@ -239,7 +246,6 @@ section {
     margin-bottom: 2rem;
 }
 
-
 @media (max-width:425px) {
     .logoIndex {
         margin: 1rem auto;
@@ -268,8 +274,13 @@ section {
         font-weight: bolder;
     }
 
+    .formContainer {
+        width: 18rem;
+        justify-content: space-between;
+    }
+
     .input-border-width {
-        width: 20rem;
+        width: 16rem;
     }
     
     .input-border-width:focus {
