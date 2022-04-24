@@ -1,299 +1,214 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to right, #bde0fe, #ffbf69); 
-}
-
-.colorBarra {
-    background:#2A9D8F;
-}
-
-input {
-    height: 40px;
-}
-
-.inputNavbar {
-    margin-top: 1rem;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #F4A261;
-    padding: 0 2.5rem;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color:#bde0fe;
-}
-
-.navbar-light .navbar-brand {
-    color: #F4A261;
-}
-
-.navbar-light .navbar-brand:hover {
-    color: #bde0fe ;
-}
-
 .botonNavbar {
-    color: white;
-    width: 100px;
-    height: 40px;
-    margin: 1rem;
-    background:#E9C46A;
-    border: 2px solid;
-    border-color: #E76F51;
-    transition: all 1s ease;
-}
-
-.botonNavbar:hover {
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin: 1rem;
+  background: #ffbf69;
+  border: 2px solid;
+  border-color: #E76F51;
+  transition: all 1s ease; }
+  .botonNavbar:hover {
     background: #bde0fe;
     border-color: #264653;
-    color: #264653;
-}
-
-.titulo {
-    text-align: center;
-    color: #E76F51;
-    font-size: 50px;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-.subtitulo {
-    text-align: center;
-    font-size: 35px;
-    color: #2A9D8F;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.logoIndex {
-    max-width: 100%;
-    margin: 2rem auto;
-    display: block;
-    
-}
-
-.logosLargos {
-    width: 550px;
-    margin: 2rem auto;
-    display: block;
-}
-
-.logosCortos {
-    width: 400px;
-    height: 100px;
-    margin: 2rem auto;
-    display: block;
-}
-
-.tituloProd {
-    text-decoration-line: underline;
-    font-size: 30px;
-    font-weight: lighter;
-    color: #E76F51;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    margin-left: 2.5rem;
-}
-
-.nombreProducto {
-    margin: 1rem;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #264653;
-}
-
-.descripcionSeccion {
-    font-size: 30px;
-    font-weight: lighter;
-    color: #2d6a4f;
-    margin: 0;
-}
-
-.card {
-    display: inline;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    width: 18rem;
-    background-color:#ffbf69;
-    
-}
-
-.card-border{
-    border:solid 10px #2A9D8F;
-    border-radius: 20px;
-}
-
-.card-body {
-    background: linear-gradient(#bde0fe, #ffbf69);
-    height: 14rem;
-}
-
-.card-title {
-    color: #2A9D8F;;
-}
-
-.card-text {
-    color: white;
-}
-
-.card-justify{
-    justify-content: space-evenly;
-}
+    color: #264653; }
 
 .color-boton {
-    color: white;
-    font-size: 15px;
-    margin: 1rem;
-    padding: 0.5rem 1.2rem;
-    background:#E9C46A;
-    border: 2px solid;
-    border-color: #E76F51;
-    transition: all 1s ease;
-}
-.color-boton:hover {
+  color: white;
+  font-size: 15px;
+  margin: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #ffbf69;
+  border: 2px solid;
+  border-color: #E76F51;
+  transition: all 1s ease; }
+  .color-boton:hover {
     background: #bde0fe;
     border-color: #264653;
-    color: #264653;
-}
+    color: #264653; }
 
-.form {
-    width: auto;
-    margin: 2rem auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #2A9D8F;
-}
+.logoIndex {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block; }
 
-.formContainer {
-    width: 27.5rem;
-    border:solid 1px;
-    border-color: #2A9D8F;
-    border-radius: 20px;
-    background: linear-gradient(to left, #bde0fe, #ffbf69);
-}
+.logosLargos {
+  width: 550px;
+  margin: 2rem auto;
+  display: block; }
 
-.input-border-width {
-    width: 25rem;
-    transition: all;
-}
-
-.input-border-width:focus {
-    width: 30rem;
-    font-size: 20px;
-}
-
-.form-label {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-.tituloMapaContancto {
-    text-decoration-line: underline;
-    font-size: 30px;
-    font-weight: lighter;
-    color: #E76F51;
-    margin: 2rem 0;
-}
-
-.mapa {
-    margin: 3rem 0;
-}
-
-section {
-    display: flex;
-}
-
-.fondoVerdeFooter {
-    background-color: #2A9D8F;
-    max-width: 100%;
-    height: 225px;
-    
-}
-
-.text-muted {
-    color:#F4A261!important;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.redesSociales img {
-    margin-top: 1rem;
-    display: inline-block;
-    width: 10%;
-}
-
-.pieDePagina img {
-    display: block;
-    width: 15%;
-}
-
-.botonFormulario {
-    width: 100px;
-    height: 40px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 130px;
-}
+.logosCortos {
+  width: 400px;
+  height: 100px;
+  margin: 2rem auto;
+  display: block; }
 
 .card {
+  display: inline;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 18rem;
+  background-color: #ffbf69; }
+
+.card-border {
+  border: solid 10px #2A9D8F;
+  border-radius: 20px; }
+
+.card-body {
+  background: linear-gradient(#bde0fe, #ffbf69);
+  height: 14rem; }
+
+.card-title {
+  color: #2d6a4f; }
+
+.card-text {
+  color: #E76F51; }
+
+.card-justify {
+  justify-content: space-evenly; }
+
+div .form {
+  width: auto;
+  margin: 1rem auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2A9D8F; }
+
+div .formContainer {
+  width: 27.5rem;
+  border: solid 1px;
+  border-color: #2A9D8F;
+  border-radius: 20px;
+  background: linear-gradient(to left, #bde0fe, #ffbf69); }
+
+div .input-border-width {
+  width: 25rem;
+  transition: all; }
+  div .input-border-width:focus {
+    width: 30rem;
+    font-size: 1.2rem; }
+
+div .form-label {
+  margin-top: 2rem;
+  margin-bottom: 0; }
+
+@media (max-width: 425px) {
+  .logoIndex {
+    margin: 1rem auto; }
+  .titulo {
+    font-size: 35px;
+    margin: 1rem auto;
+    font-weight: bolder; }
+  .subtitulo {
+    font-size: 25px;
+    margin: 1rem auto;
+    font-weight: bolder; }
+  .descripcionSeccion {
+    font-size: 20px;
+    font-weight: bolder; }
+  .tituloProd {
+    font-size: 25px;
+    margin: 0.5rem auto;
+    font-weight: bolder; }
+  .formContainer {
+    width: 18rem;
+    justify-content: space-between; }
+  .input-border-width {
+    width: 16rem; }
+  .input-border-width:focus {
+    width: 17rem;
+    font-size: 15px; } }
+
+@media (max-width: 767px) {
+  .fondoVerdeFooter {
+    background-color: #2A9D8F;
+    max-width: 100%;
+    height: 350px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to right, #bde0fe, #ffbf69); }
+
+header .colorBarra {
+  background: #2A9D8F; }
+
+header .navbar-light .navbar-brand {
+  color: #F4A261; }
+  header .navbar-light .navbar-brand:hover {
+    color: #bde0fe; }
+
+header .navbar-light .navbar-nav .nav-link {
+  color: #F4A261;
+  padding: 0 2.5rem; }
+  header .navbar-light .navbar-nav .nav-link:hover {
+    color: #bde0fe; }
+
+form input {
+  height: 40px; }
+
+form .inputNavbar {
+  margin-top: 1rem; }
+
+div .titulo {
+  text-align: center;
+  color: #E76F51;
+  font-size: 50px;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+div .subtitulo {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.8rem;
+  color: #2A9D8F;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+div .tituloProd {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #E76F51;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem; }
+
+div .descripcionSeccion {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #2d6a4f;
+  margin: 0; }
+
+section .tituloMapaContancto {
+  text-decoration-line: underline;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #E76F51;
+  margin: 2rem 0; }
+
+section .descripcionSeccion {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #2d6a4f;
+  margin: 0; }
+
+section .mapa {
+  margin: 2rem 0; }
+
+footer {
+  background-color: #2A9D8F;
+  max-width: 100%;
+  height: 225px; }
+  footer .text-muted {
+    color: #F4A261 !important;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  footer .redesSociales img {
     margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-@media (max-width:425px) {
-    .logoIndex {
-        margin: 1rem auto;
-    }
-    
-    .titulo {
-        font-size: 35px;
-        margin: 1rem auto;
-        font-weight: bolder;
-    }
-    
-    .subtitulo {
-        font-size: 25px;
-        margin: 1rem auto;
-        font-weight: bolder;
-    }
-    
-    .descripcionSeccion {
-        font-size: 20px;
-        font-weight: bolder;
-    }
-
-    .tituloProd {
-        font-size: 25px;
-        margin: 0.5rem auto;
-        font-weight: bolder;
-    }
-
-    .formContainer {
-        width: 18rem;
-        justify-content: space-between;
-    }
-
-    .input-border-width {
-        width: 16rem;
-    }
-    
-    .input-border-width:focus {
-        width: 17rem;
-        font-size: 15px;
-    }
-}
-
-@media (max-width:767px) {
-    .fondoVerdeFooter {
-        background-color: #2A9D8F;
-        max-width: 100%;
-        height: 350px;
-        
-    }
-}
+    display: inline-block;
+    width: 10%; }
+  footer .pieDePagina img {
+    display: block;
+    width: 15%; }
