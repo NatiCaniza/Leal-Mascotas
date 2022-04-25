@@ -16,111 +16,115 @@
     }
 }
 
-.color-boton {
-    color: $color-blanco;
-    font-size: 15px;
-    margin: $margin-top;
-    padding: 0.5rem 1.2rem;
-    background: $color-naranjaClaro;
-    border: 2px solid;
-    border-color: $color-naranjaOscuro;
-    transition: all 1s ease;
-
-    &:hover {
+.card-body {
+    .color-boton {
+        color: $color-blanco;
+        font-size: 15px;
+        margin: $margin-top;
+        padding: 0.5rem 1.2rem;
+        background: $color-naranjaClaro;
+        border: 2px solid;
+        border-color: $color-naranjaOscuro;
+        transition: all 1s ease;
+    
+        &:hover {
             background: $color-celeste;
-            border-color: $color-azul;
-            color: $color-azul;
+        border-color: $color-azul;
+        color: $color-azul;
         }
-        
     }
-
+}
 
 //logos: 
-.logoIndex {
-    max-width: 100%;
-    margin: $margin-bottom auto;
-    display: block;
+.text-align {
+    .logoIndex {
+        max-width: 100%;
+        margin: $margin-bottom auto;
+        display: block;
+        
+    }
     
-}
-
-.logosLargos {
-    width: 550px;
-    margin: $margin-bottom auto;
-    display: block;
-}
-
-.logosCortos {
-    width: 400px;
-    height: 100px;
-    margin: $margin-bottom auto;
-    display: block;
+    .logosLargos {
+        width: 550px;
+        margin: $margin-bottom auto;
+        display: block;
+    }
+    
+    .logosCortos {
+        width: 400px;
+        height: 100px;
+        margin: $margin-bottom auto;
+        display: block;
+    }
 }
 
 //cards: 
-
-.card {
-    display: inline;
-    margin-top: $margin-bottom;
-    margin-bottom: $margin-bottom;
-    width: 18rem;
-    background-color:$color-naranjaClaro;
-}
-
-.card-border{
-    border:solid 10px $color-verde;
-    border-radius: 20px;
-}
-
-.card-body {
-    background: linear-gradient($color-celeste, $color-naranjaClaro);
-    height: 14rem;
-}
-
-.card-title {
-    color: $color-verdeOscuro;
-}
-
-.card-text {
-    color: $color-naranjaOscuro;
-}
-
 .card-justify{
     justify-content: space-evenly;
+
+    .card {
+        display: inline;
+        margin-top: $margin-bottom;
+        margin-bottom: $margin-top;
+        width: 18rem;
+        background-color: $color-naranjaClaro;
+
+        .card-body {
+            background: linear-gradient($color-celeste, $color-naranjaClaro);
+            height: 14rem;
+        }
+        
+        .card-title {
+            color: $color-verde;
+        }
+        
+        .card-text {
+            color: $color-blanco;
+        }
+        
+    }
+    
+    .card-border{
+        border:solid 10px $color-verde;
+        border-radius: 20px;
+    }
 }
 
 //formulario: 
+.form {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin:$margin-bottom auto;
+    font-family: $fuente;
+    color: $color-verde;
 
-div {
-    .form {
-        width: auto;
-        margin: $margin-top auto;
-        font-family: $fuente;
-        color: $color-verde;
-    }
-    
     .formContainer {
         width: 27.5rem;
+        text-align: center;
         border:solid 1px;
         border-color: $color-verde;
         border-radius: 20px;
         background: linear-gradient(to left, $color-celeste, $color-naranjaClaro);
-    }
-    
-    .input-border-width {
-        width: 25rem;
-        transition: all;
 
-        &:focus {
-            width: 30rem;
-        font-size: 1.2rem;
+        .input-border-width {
+            width: 25rem;
+            transition: all;
+
+            &:focus {
+                width: 30rem;
+            font-size: 20px;
+            }
         }
-    }
 
-    .form-label {
-        margin-top: $margin-bottom;
-        margin-bottom: 0;
-    }  
+        .form-label {
+            margin-top: $margin-bottom;
+            margin-bottom: 0;
+        }
+        
+    }
 }
+
 
 
 

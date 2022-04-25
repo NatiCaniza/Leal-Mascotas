@@ -1,6 +1,6 @@
 @import "variables";
 @import "componentes";
-@import "mediaQueries";
+
 
 *{
     margin: 0;
@@ -12,32 +12,36 @@ body {
     background: linear-gradient(to right, $color-celeste, $color-naranjaClaro); 
 }
 
-header {
-    .colorBarra {
-        background: $color-verde;}
-    .navbar-light .navbar-brand {
-        color: $color-naranja;
-    &:hover {
-        color: $color-celeste;}
-    }
-    .navbar-light .navbar-nav .nav-link {
-        color: $color-naranja;
-        padding: 0 2.5rem;
-    &:hover {
-        color: $color-celeste;}  
-    }
-}
+.colorBarra {
+    background: $color-verde;
 
-form {
-    input {
+    .navbar-brand {
+        color: $color-naranja;
+
+        &:hover {
+            color: $color-celeste ;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: $color-naranja;
+            padding: 0 2.5rem;
+
+            &:hover {
+                color: $color-celeste ;
+            }
+        }
+    }
+
+    .inputNavbar {
+        margin-top:$margin-top;
         height: 40px;
     }
-    .inputNavbar {
-        margin-top: 1rem;
-    }    
 }
 
-div {
+.text-align {
+    text-align: center;
+
     .titulo {
         text-align: center;
         color: $color-naranjaOscuro;
@@ -45,77 +49,119 @@ div {
         margin-top: $margin-top;
         margin-bottom: $margin-bottom;
     }
-
+    
     .subtitulo {
         text-align: center;
-        text-decoration: underline;
-        font-size: $size-textoBody;
+        font-size: 35px;
         color: $color-verde;
         margin-top: $margin-top;
-        margin-bottom: $margin-bottom;
+        margin-bottom:$margin-bottom;
     }
+}
+
+.font-weight {
+    font-weight:lighter;
+    font-size: 2rem;
 
     .tituloProd {
-        
-        font-size: $size-textoBody;
-        font-weight: lighter;
+        text-decoration-line: underline;
         color: $color-naranjaOscuro;
-        margin-top: $margin-top;
-        margin-bottom: $margin-bottom;
-        margin-left: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     .descripcionSeccion {
-        font-size: $size-textoBody;
-        font-weight: lighter;
         color: $color-verdeOscuro;
         margin: 0;
     }
-}
 
-section {
-        .tituloMapaContancto {
-            text-decoration-line: underline;
-            font-size: $size-textoBody;
-            font-weight: lighter;
-            color: $color-naranjaOscuro;
-            margin: $margin-bottom 0;
-        }
-
-        .descripcionSeccion {
-            font-size: $size-textoBody;
-            font-weight: lighter;
-            color: $color-verdeOscuro;
-            margin: 0;
-        }
-
-        .mapa {
-            margin: $margin-bottom 0;
-        }
-}
-
-footer {
-        background-color: #2A9D8F;
-        max-width: 100%;
-        height: 225px;
-        
+    .mapa {
+        margin: 3rem 0;
+    }
     
+}
+
+.fondoVerdeFooter {
+    background-color: $color-verde;
+    max-width: 100%;
+    height: 225px;
+
     .text-muted {
-        color:#F4A261!important;
+        color: $color-naranja!important;
         margin-top: 2rem;
         margin-bottom: 0;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    
+
     .redesSociales img {
         margin-top: 1rem;
         display: inline-block;
         width: 10%;
     }
+}
+
+@media (max-width:425px) {
+    .text-bolder {
+        font-weight: bolder;
+        .logoIndex {
+            margin:  $margin-top auto;
+        }
+        
+        .titulo {
+            font-size: 35px;
+            margin:  $margin-top auto;
+            font-weight: bolder;
+        }
+        
+        .subtitulo {
+            font-size: 25px;
+            margin:  $margin-top auto;
+            font-weight: bolder;
+        }
+    }
+
+    .font-weight {
+        .descripcionSeccion {
+            font-size: 20px;
+        }
     
-    .pieDePagina img {
-        display: block;
-        width: 15%;
+        .tituloProd {
+            font-size: 25px;
+            margin: 0.5rem auto;
+        }
+    }
+
+    .form {
+        .formContainer {
+            width: 18rem;
+            margin-top: $margin-top;
+            margin-bottom: $margin-top;
+            
+            .input-border-width {
+                width: 16rem;
+    
+                &:focus {
+                    width: 18rem;
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
+
+@media (max-width:767px) {
+    .fondoVerdeFooter {
+        height: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
