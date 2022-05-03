@@ -1,0 +1,25 @@
+/*Maps*/
+$iconoRedesSociales: (facebook: $color-Facebook, twitter: $color-Twitter, instagram: $color-Instagram);
+
+@each $red, $color in $iconoRedesSociales {
+    .#{$red} {
+        background-color: $color;
+    }
+}
+
+/*Map Get*/
+$estiloBotones: (
+    margen: $margin-top,
+    color: $color-blanco,
+    colorFondo: $color-naranjaClaro,
+    borde: 2px solid,
+    borde-color: $color-naranjaOscuro,
+    transicion: all 1s ease,
+);
+
+$hoverBotones: (
+    colorFondo: $color-celeste,
+    borde-color: $color-azul,
+    color: $color-azul,
+);
+

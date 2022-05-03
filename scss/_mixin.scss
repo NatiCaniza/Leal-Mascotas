@@ -1,0 +1,9 @@
+/*Mixin*/
+@mixin estiloRedesSociales {
+        margin-top: $margin-top;
+        margin-left: 1.3rem;
+        padding: 0.2rem;
+        border-radius: 10px;
+        display: inline-block;
+        width: 10%;
+}

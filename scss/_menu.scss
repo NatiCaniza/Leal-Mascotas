@@ -1,0 +1,27 @@
+/*Menú*/
+.colorBarra {
+    background: $color-verde;
+
+    .navbar-brand {
+        color: $color-naranja;
+
+        &:hover {
+            color: $color-celeste ;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: $color-naranja;
+            padding: 0 2.5rem;
+
+            &:hover {
+                color: $color-celeste ;
+            }
+        }
+    }
+
+    .inputNavbar {
+        margin-top:$margin-top;
+        height: 40px;
+    }
+}

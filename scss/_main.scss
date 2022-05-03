@@ -1,0 +1,51 @@
+/*Main*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fuente;
+    background: linear-gradient(to right, $color-celeste, $color-naranjaClaro); 
+}
+
+.text-align {
+    text-align: center;
+
+    .titulo {
+        text-align: center;
+        color: $color-naranjaOscuro;
+        font-size: 50px;
+        margin-top: $margin-top;
+        margin-bottom: $margin-bottom;
+    }
+
+    /*Extend*/
+    .subtitulo {
+        @extend .titulo;
+        font-size: 35px;
+        color: $color-verde;
+        }
+    }
+
+.font-weight {
+    font-weight:lighter;
+    font-size: 2rem;
+
+    .tituloProd {
+        text-decoration-line: underline;
+        color: $color-naranjaOscuro;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .descripcionSeccion {
+        color: $color-verdeOscuro;
+        margin: 0;
+    }
+
+    .mapa {
+        margin: 3rem 0;
+    }
+    
+}

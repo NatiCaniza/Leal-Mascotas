@@ -1,0 +1,33 @@
+Agregué estas keywords en las secciones:
+-Inicio:"TIENDA, ACCESORIOS, MASCOTAS, DESCUENTOS, VENTA, MAYOR, MENOR"
+
+-Accesorios de Paseo:"ACCESORIOS, PASEO, PRODUCTOS, TALLES, CORREA, COLLAR, BOLSO"
+
+-Jugutes:"JUGUETES, DIVERSION, JUGAR, HUESO, PELOTA"
+
+-Cuidado e Higiene:"CUIDADO, HIGIENE, CEPILLO, GUANTE, ALICATE, COMEDERO, SANITARIO"
+
+-Contacto:"CONTACTO, CONSULTA, EMAIL, GALERIA, MAPA"
+
+
+Agregué estas descripciones en las secciones:
+-Inicio:"Todo lo que necesitas para cuidar de tu mascota en un solo lugar. Venta por mayor y menor. Envío gratis a domicilio."
+
+-Accesorios de Paseo:"Accesorios que complementan el cuidado de tus mascotas. Arnes, Collares Led, Correas retráctil, bolsos de transporte y más"
+
+-Jugutes:"Encontra todo tipo de juguetes para tus mascotas. Conseguí lo que necesitas para que se diviertan juntos, lo mejor en calidad y precio!."
+
+-Cuidado e Higiene:"Los mejores productos para el cuidado e higiene de tus mascotas. Encontrá cepillos, platos, kits sanitarios para gatos y mucho más!"
+
+-Contacto:"Hace tu pedido, contactanos para ventas por mayor o visitanos en nuestro local."
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+/*Footer*/
+.fondoVerdeFooter {
+    background-color: $color-verde;
+    max-width: 100%;
+    height: 225px;
+
+    .text-muted {
+        color: $color-naranja!important;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    /*Mixin*/
+    .redesSociales img {
+        @include estiloRedesSociales;
+        
+    }
+}
