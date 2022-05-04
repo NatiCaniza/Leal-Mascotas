@@ -48,6 +48,16 @@
             }
         }
     }
+
+    .imagen-justify {
+        .imagenes {
+            width: 20rem;
+            height: 12rem;
+            margin-top: $margin-bottom;
+            margin-bottom: $margin-top;
+        }
+    }
+    
 }
 
 @media (max-width:767px) {

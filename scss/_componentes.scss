@@ -92,6 +92,24 @@
     }
 }
 
+/*Imágenes*/
+.imagen-justify{
+    justify-content: space-evenly;
+    
+    .imagenes {
+        width: 30rem;
+        height: 20rem;
+        margin-top: $margin-bottom;
+        margin-bottom: $margin-bottom;
+        background-color: $color-naranjaClaro;
+    }
+
+    .imagenes-border{
+        border:solid 10px $color-verde;
+        border-radius: 20px;
+    }
+}
+
 /*Formulario*/ 
 .form {
     display: flex;
