@@ -11,9 +11,18 @@
     .colorBarra .navbar-brand:hover {
       color: #bde0fe; }
   .colorBarra .navbar-nav .nav-link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #F4A261;
-    padding: 0 1.5rem; }
+    margin: 0.5rem;
+    padding: 1rem; }
     .colorBarra .navbar-nav .nav-link:hover {
+      color: #bde0fe; }
+  .colorBarra .dropdown {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F4A261;
+    margin: 0.5rem;
+    padding: 0.5; }
+    .colorBarra .dropdown:hover {
       color: #bde0fe; }
   .colorBarra .inputNavbar {
     margin-top: 1rem;
@@ -177,20 +186,30 @@ body {
 .fondoVerdeFooter {
   background-color: #2A9D8F;
   max-width: 100%;
-  height: 225px;
-  /*Mixin*/ }
+  height: 313px; }
   .fondoVerdeFooter .text-muted {
-    color: #F4A261 !important;
+    color: #bde0fe !important;
     margin-top: 2rem;
     margin-bottom: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .fondoVerdeFooter .redesSociales img {
-    margin-top: 1rem;
-    margin-left: 1.3rem;
-    padding: 0.2rem;
-    border-radius: 10px;
-    display: inline-block;
-    width: 10%; }
+  .fondoVerdeFooter .link-footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: #F4A261;
+    text-decoration: none; }
+    .fondoVerdeFooter .link-footer:hover {
+      color: #bde0fe; }
+  .fondoVerdeFooter .p-footer {
+    font-size: 1rem; }
+
+/*Mixin*/
+.redesSociales img {
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+  display: inline-block;
+  width: 10%; }
 
 /*Media Queries*/
 @media (max-width: 425px) {
@@ -228,4 +247,4 @@ body {
 
 @media (max-width: 767px) {
   .fondoVerdeFooter {
-    height: 350px; } }
+    height: 430px; } }
