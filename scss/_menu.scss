@@ -12,24 +12,27 @@
     .navbar-nav {
         .nav-link {
             font-family: $fuente;
+            font-size: 16px;
             color: $color-naranja;
             margin: 0.5rem;
-            padding: 1rem;
+            padding: 1.5rem;
 
             &:hover {
                 color: $color-celeste ;
             }
         }
     }
+    .dropdown-menu {
+        background: $color-verde;
 
-    .dropdown {
-        font-family: $fuente;
-        color: $color-naranja;
-        margin: 0.5rem;
-        padding: 0.5;
+        .link-dropdown {
+            font-family: $fuente;
+            font-size: 16px;
+            color: $color-naranja;
 
-        &:hover {
-            color: $color-celeste ;
+            &:hover {
+                color: $color-verde;
+            }
         }
     }
 

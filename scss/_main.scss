@@ -30,7 +30,7 @@ body {
 
 .font-weight {
     font-weight:lighter;
-    font-size: 2rem;
+    font-size: 32px;
 
     .tituloProd {
         text-decoration-line: underline;
@@ -42,6 +42,17 @@ body {
     .descripcionSeccion {
         color: $color-verdeOscuro;
         margin: 0;
+
+        .link-aqui{
+            font-family: $fuente;
+            font-size: 32px;
+            color: $color-naranjaOscuro;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-naranjaRojizo;
+            }
+        }
     }
 
     .mapa {

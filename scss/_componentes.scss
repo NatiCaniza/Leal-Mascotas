@@ -11,9 +11,9 @@
     transition: map-get($estiloBotones, transicion);
 
     &:hover {
-        background: map-get($hoverBotones,colorFondo);
+        background: map-get($hoverBotones, colorFondo);
         border-color: map-get($hoverBotones, borde-color);
-        color: map-get($hoverBotones,color);
+        color: map-get($hoverBotones, color);
     }
 }
 
@@ -28,14 +28,14 @@
         border: map-get($estiloBotones, borde);
         border-color: map-get($estiloBotones, borde-color);
         transition: map-get($estiloBotones, transicion);
-    
+
         &:hover {
-            background: map-get($hoverBotones,colorFondo);
+            background: map-get($hoverBotones, colorFondo);
             border-color: map-get($hoverBotones, borde-color);
-            color: map-get($hoverBotones,color);
-    }
+            color: map-get($hoverBotones, color);
         }
     }
+}
 
 /*Logos*/
 .text-align {
@@ -43,15 +43,15 @@
         max-width: 100%;
         margin: $margin-bottom auto;
         display: block;
-        
+
     }
-    
+
     .logosLargos {
         width: 550px;
         margin: $margin-bottom auto;
         display: block;
     }
-    
+
     .logosCortos {
         width: 400px;
         height: 100px;
@@ -61,7 +61,7 @@
 }
 
 /*Cards*/
-.card-justify{
+.card-justify {
     justify-content: space-evenly;
 
     .card {
@@ -75,27 +75,67 @@
             background: linear-gradient($color-celeste, $color-naranjaClaro);
             height: 14rem;
         }
-        
+
         .card-title {
+            font-size: $fuente;
             color: $color-verde;
         }
-        
+
         .card-text {
-            color: $color-blanco;
+            font-size: $fuente;
+            color: $color-naranjaRojizo;
         }
-        
+
     }
-    
-    .card-border{
-        border:solid 10px $color-verde;
+
+    .card-border {
+        border: solid 10px $color-verde;
         border-radius: 20px;
+
+        .card-height {
+            height: 15rem;
+        }
+    }
+}
+
+.card {
+    border: solid 5px $color-verde;
+    border-radius: 10px;
+    margin-bottom: $margin-bottom;
+
+    .card-bodyAsociaciones {
+        background-color: $color-naranjaClaro;
+
+        .card-link {
+            font-family: $fuente;
+            font-size: 16px;
+            text-decoration: none;
+            color: $color-naranjaRojizo;
+            margin: 0.5rem;
+            padding: 1.5rem;
+
+            &:hover {
+                color: $color-verde;
+            }
+        }
+
+        .card-textAsociaciones {
+            font-size: $fuente;
+            color: $color-azul;
+        }
+    }
+
+    .card-imgAsociaciones {
+        width: 39.3rem;
+        height: 10rem;
+        background-color: rgb(189, 192, 189);
     }
 }
 
 /*Imágenes*/
-.imagen-justify{
+.imagen-justify {
     justify-content: space-evenly;
-    
+
     .imagenes {
         width: 30rem;
         height: 20rem;
@@ -104,8 +144,8 @@
         background-color: $color-naranjaClaro;
     }
 
-    .imagenes-border{
-        border:solid 10px $color-verde;
+    .imagenes-border {
+        border: solid 10px $color-verde;
         border-radius: 20px;
     }
 }
@@ -115,14 +155,14 @@
     display: flex;
     justify-content: center;
     width: auto;
-    margin:$margin-bottom auto;
+    margin: $margin-bottom auto;
     font-family: $fuente;
     color: $color-verde;
 
     .formContainer {
         width: 27.5rem;
         text-align: center;
-        border:solid 1px;
+        border: solid 1px;
         border-color: $color-verde;
         border-radius: 20px;
         background: linear-gradient(to left, $color-celeste, $color-naranjaClaro);
@@ -133,7 +173,7 @@
 
             &:focus {
                 width: 30rem;
-            font-size: 20px;
+                font-size: 20px;
             }
         }
 
@@ -141,7 +181,7 @@
             margin-top: $margin-bottom;
             margin-bottom: 0;
         }
-        
+
     }
 }
 

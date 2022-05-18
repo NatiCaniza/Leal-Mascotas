@@ -12,18 +12,20 @@
       color: #bde0fe; }
   .colorBarra .navbar-nav .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
     color: #F4A261;
     margin: 0.5rem;
-    padding: 1rem; }
+    padding: 1.5rem; }
     .colorBarra .navbar-nav .nav-link:hover {
       color: #bde0fe; }
-  .colorBarra .dropdown {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #F4A261;
-    margin: 0.5rem;
-    padding: 0.5; }
-    .colorBarra .dropdown:hover {
-      color: #bde0fe; }
+  .colorBarra .dropdown-menu {
+    background: #2A9D8F; }
+    .colorBarra .dropdown-menu .link-dropdown {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      color: #F4A261; }
+      .colorBarra .dropdown-menu .link-dropdown:hover {
+        color: #2A9D8F; }
   .colorBarra .inputNavbar {
     margin-top: 1rem;
     height: 40px; }
@@ -63,7 +65,7 @@ body {
 
 .font-weight {
   font-weight: lighter;
-  font-size: 2rem; }
+  font-size: 32px; }
   .font-weight .tituloProd {
     text-decoration-line: underline;
     color: #E76F51;
@@ -72,6 +74,13 @@ body {
   .font-weight .descripcionSeccion {
     color: #2d6a4f;
     margin: 0; }
+    .font-weight .descripcionSeccion .link-aqui {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 32px;
+      color: #E76F51;
+      text-decoration: none; }
+      .font-weight .descripcionSeccion .link-aqui:hover {
+        color: #eb3a0e; }
   .font-weight .mapa {
     margin: 3rem 0; }
 
@@ -136,12 +145,39 @@ body {
       background: linear-gradient(#bde0fe, #ffbf69);
       height: 14rem; }
     .card-justify .card .card-title {
+      font-size: Verdana, Geneva, Tahoma, sans-serif;
       color: #2A9D8F; }
     .card-justify .card .card-text {
-      color: white; }
+      font-size: Verdana, Geneva, Tahoma, sans-serif;
+      color: #eb3a0e; }
   .card-justify .card-border {
     border: solid 10px #2A9D8F;
     border-radius: 20px; }
+    .card-justify .card-border .card-height {
+      height: 15rem; }
+
+.card {
+  border: solid 5px #2A9D8F;
+  border-radius: 10px;
+  margin-bottom: 2rem; }
+  .card .card-bodyAsociaciones {
+    background-color: #ffbf69; }
+    .card .card-bodyAsociaciones .card-link {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      color: #eb3a0e;
+      margin: 0.5rem;
+      padding: 1.5rem; }
+      .card .card-bodyAsociaciones .card-link:hover {
+        color: #2A9D8F; }
+    .card .card-bodyAsociaciones .card-textAsociaciones {
+      font-size: Verdana, Geneva, Tahoma, sans-serif;
+      color: #264653; }
+  .card .card-imgAsociaciones {
+    width: 39.3rem;
+    height: 10rem;
+    background-color: #bdc0bd; }
 
 /*Imágenes*/
 .imagen-justify {
@@ -230,6 +266,8 @@ body {
   .font-weight .tituloProd {
     font-size: 25px;
     margin: 0.5rem auto; }
+  .card .card-imgAsociaciones {
+    width: 1rem; }
   .form .formContainer {
     width: 18rem;
     margin-top: 1rem;
@@ -246,5 +284,7 @@ body {
     margin-bottom: 1rem; } }
 
 @media (max-width: 767px) {
+  .card .card-imgAsociaciones {
+    width: 26.55rem; }
   .fondoVerdeFooter {
     height: 430px; } }
