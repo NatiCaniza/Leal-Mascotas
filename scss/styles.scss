@@ -31,13 +31,7 @@
             margin: 0.5rem auto;
         }
     }
-
-    .card {
-        .card-imgAsociaciones {
-            width: 1rem;
-        }
-    }           
-
+    
     .form {
         .formContainer {
             width: 18rem;
@@ -67,18 +61,10 @@
 }
 
 @media (max-width:767px) {
-    .card {
-        .card-imgAsociaciones {
-            width: 26.55rem;
-
-        }
-    }
-
     .fondoVerdeFooter {
         height: 430px;
     }
 }
-
 
 
 

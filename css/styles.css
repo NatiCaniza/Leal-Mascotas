@@ -48,14 +48,14 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to right, #bde0fe, #ffbf69); }
+  background: linear-gradient(to right, #bde0fe, #fdbc67); }
 
 .text-align {
   text-align: center;
   /*Extend*/ }
   .text-align .titulo, .text-align .subtitulo {
     text-align: center;
-    color: #E76F51;
+    color: #f86a46;
     font-size: 50px;
     margin-top: 1rem;
     margin-bottom: 2rem; }
@@ -67,20 +67,19 @@ body {
   font-weight: lighter;
   font-size: 32px; }
   .font-weight .tituloProd {
-    text-decoration-line: underline;
     color: #E76F51;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .font-weight .descripcionSeccion {
     color: #2d6a4f;
     margin: 0; }
-    .font-weight .descripcionSeccion .link-aqui {
+    .font-weight .descripcionSeccion .link-contacto {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 32px;
       color: #E76F51;
       text-decoration: none; }
-      .font-weight .descripcionSeccion .link-aqui:hover {
-        color: #eb3a0e; }
+      .font-weight .descripcionSeccion .link-contacto:hover {
+        color: #2A9D8F; }
   .font-weight .mapa {
     margin: 3rem 0; }
 
@@ -91,7 +90,7 @@ body {
   /*Map Get*/
   margin: 1rem;
   color: white;
-  background: #ffbf69;
+  background: #fdbc67;
   border: 2px solid;
   border-color: #E76F51;
   transition: all 1s ease; }
@@ -106,7 +105,7 @@ body {
   /*Map Get*/
   margin: 1rem;
   color: white;
-  background: #ffbf69;
+  background: #fdbc67;
   border: 2px solid;
   border-color: #E76F51;
   transition: all 1s ease; }
@@ -115,20 +114,9 @@ body {
     border-color: #264653;
     color: #264653; }
 
-/*Logos*/
+/*Logo*/
 .text-align .logoIndex {
   max-width: 100%;
-  margin: 2rem auto;
-  display: block; }
-
-.text-align .logosLargos {
-  width: 550px;
-  margin: 2rem auto;
-  display: block; }
-
-.text-align .logosCortos {
-  width: 400px;
-  height: 100px;
   margin: 2rem auto;
   display: block; }
 
@@ -140,44 +128,21 @@ body {
     margin-top: 2rem;
     margin-bottom: 1rem;
     width: 18rem;
-    background-color: #ffbf69; }
+    background-color: #fdbc67; }
     .card-justify .card .card-body {
-      background: linear-gradient(#bde0fe, #ffbf69);
+      background: linear-gradient(#bde0fe, #fdbc67);
       height: 14rem; }
     .card-justify .card .card-title {
       font-size: Verdana, Geneva, Tahoma, sans-serif;
       color: #2A9D8F; }
     .card-justify .card .card-text {
       font-size: Verdana, Geneva, Tahoma, sans-serif;
-      color: #eb3a0e; }
+      color: #f86a46; }
   .card-justify .card-border {
     border: solid 10px #2A9D8F;
     border-radius: 20px; }
     .card-justify .card-border .card-height {
       height: 15rem; }
-
-.card {
-  border: solid 5px #2A9D8F;
-  border-radius: 10px;
-  margin-bottom: 2rem; }
-  .card .card-bodyAsociaciones {
-    background-color: #ffbf69; }
-    .card .card-bodyAsociaciones .card-link {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 16px;
-      text-decoration: none;
-      color: #eb3a0e;
-      margin: 0.5rem;
-      padding: 1.5rem; }
-      .card .card-bodyAsociaciones .card-link:hover {
-        color: #2A9D8F; }
-    .card .card-bodyAsociaciones .card-textAsociaciones {
-      font-size: Verdana, Geneva, Tahoma, sans-serif;
-      color: #264653; }
-  .card .card-imgAsociaciones {
-    width: 39.3rem;
-    height: 10rem;
-    background-color: #bdc0bd; }
 
 /*Imágenes*/
 .imagen-justify {
@@ -187,7 +152,7 @@ body {
     height: 20rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: #ffbf69; }
+    background-color: #fdbc67; }
   .imagen-justify .imagenes-border {
     border: solid 10px #2A9D8F;
     border-radius: 20px; }
@@ -206,7 +171,7 @@ body {
     border: solid 1px;
     border-color: #2A9D8F;
     border-radius: 20px;
-    background: linear-gradient(to left, #bde0fe, #ffbf69); }
+    background: linear-gradient(to left, #bde0fe, #fdbc67); }
     .form .formContainer .input-border-width {
       width: 25rem;
       transition: all; }
@@ -266,8 +231,6 @@ body {
   .font-weight .tituloProd {
     font-size: 25px;
     margin: 0.5rem auto; }
-  .card .card-imgAsociaciones {
-    width: 1rem; }
   .form .formContainer {
     width: 18rem;
     margin-top: 1rem;
@@ -284,7 +247,5 @@ body {
     margin-bottom: 1rem; } }
 
 @media (max-width: 767px) {
-  .card .card-imgAsociaciones {
-    width: 26.55rem; }
   .fondoVerdeFooter {
     height: 430px; } }

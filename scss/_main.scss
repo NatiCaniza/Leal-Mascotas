@@ -14,7 +14,7 @@ body {
 
     .titulo {
         text-align: center;
-        color: $color-naranjaOscuro;
+        color: $color-naranjaRojizo;
         font-size: 50px;
         margin-top: $margin-top;
         margin-bottom: $margin-bottom;
@@ -33,24 +33,23 @@ body {
     font-size: 32px;
 
     .tituloProd {
-        text-decoration-line: underline;
         color: $color-naranjaOscuro;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
+        margin-top: $margin-bottom;
+        margin-bottom: $margin-bottom;
     }
     
     .descripcionSeccion {
         color: $color-verdeOscuro;
         margin: 0;
 
-        .link-aqui{
+        .link-contacto{
             font-family: $fuente;
             font-size: 32px;
             color: $color-naranjaOscuro;
             text-decoration: none;
 
             &:hover {
-                color: $color-naranjaRojizo;
+                color: $color-verde;
             }
         }
     }

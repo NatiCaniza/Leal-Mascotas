@@ -37,24 +37,10 @@
     }
 }
 
-/*Logos*/
+/*Logo*/
 .text-align {
     .logoIndex {
         max-width: 100%;
-        margin: $margin-bottom auto;
-        display: block;
-
-    }
-
-    .logosLargos {
-        width: 550px;
-        margin: $margin-bottom auto;
-        display: block;
-    }
-
-    .logosCortos {
-        width: 400px;
-        height: 100px;
         margin: $margin-bottom auto;
         display: block;
     }
@@ -95,40 +81,6 @@
         .card-height {
             height: 15rem;
         }
-    }
-}
-
-.card {
-    border: solid 5px $color-verde;
-    border-radius: 10px;
-    margin-bottom: $margin-bottom;
-
-    .card-bodyAsociaciones {
-        background-color: $color-naranjaClaro;
-
-        .card-link {
-            font-family: $fuente;
-            font-size: 16px;
-            text-decoration: none;
-            color: $color-naranjaRojizo;
-            margin: 0.5rem;
-            padding: 1.5rem;
-
-            &:hover {
-                color: $color-verde;
-            }
-        }
-
-        .card-textAsociaciones {
-            font-size: $fuente;
-            color: $color-azul;
-        }
-    }
-
-    .card-imgAsociaciones {
-        width: 39.3rem;
-        height: 10rem;
-        background-color: rgb(189, 192, 189);
     }
 }
 
