@@ -48,7 +48,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to right, #bde0fe, #fdbc67); }
+  background: linear-gradient(to right, #bde0fe, white); }
 
 .text-align {
   text-align: center;
@@ -214,12 +214,16 @@ body {
 
 /*Media Queries*/
 @media (max-width: 425px) {
+  .colorBarra .navbar-nav .nav-link {
+    font-size: 20px; }
+  .colorBarra .dropdown-menu .link-dropdown {
+    font-size: 19px; }
   .text-bolder {
     font-weight: bolder; }
     .text-bolder .logoIndex {
       margin: 1rem auto; }
     .text-bolder .titulo, .text-bolder .text-align .subtitulo, .text-align .text-bolder .subtitulo {
-      font-size: 35px;
+      font-size: 28px;
       margin: 1rem auto;
       font-weight: bolder; }
     .text-bolder .subtitulo {
@@ -228,6 +232,8 @@ body {
       font-weight: bolder; }
   .font-weight .descripcionSeccion {
     font-size: 20px; }
+    .font-weight .descripcionSeccion .link-contacto {
+      font-size: 20px; }
   .font-weight .tituloProd {
     font-size: 25px;
     margin: 0.5rem auto; }
@@ -247,5 +253,9 @@ body {
     margin-bottom: 1rem; } }
 
 @media (max-width: 767px) {
+  .colorBarra .navbar-nav .nav-link {
+    font-size: 20px; }
+  .colorBarra .dropdown-menu .link-dropdown {
+    font-size: 19px; }
   .fondoVerdeFooter {
     height: 430px; } }

@@ -2,6 +2,19 @@
 
 /*Media Queries*/
 @media (max-width:425px) {
+    .colorBarra{
+        .navbar-nav {
+            .nav-link {
+                font-size: 20px;
+                }
+        }
+
+        .dropdown-menu {
+            .link-dropdown {
+                font-size: 19px;
+                }
+        }
+    }
     .text-bolder {
         font-weight: bolder;
         .logoIndex {
@@ -9,7 +22,7 @@
         }
         
         .titulo {
-            font-size: 35px;
+            font-size: 28px;
             margin:  $margin-top auto;
             font-weight: bolder;
         }
@@ -24,6 +37,10 @@
     .font-weight {
         .descripcionSeccion {
             font-size: 20px;
+
+            .link-contacto{
+                font-size: 20px;
+            }
         }
     
         .tituloProd {
@@ -61,6 +78,19 @@
 }
 
 @media (max-width:767px) {
+    .colorBarra{
+        .navbar-nav {
+            .nav-link {
+                font-size: 20px;
+                }
+        }
+
+        .dropdown-menu {
+            .link-dropdown {
+                font-size: 19px;
+                }
+        }
+    }
     .fondoVerdeFooter {
         height: 430px;
     }
